@@ -1,0 +1,38 @@
+{
+    "tipoVoz":{
+        "hoja":"VOZ",
+        "comunes":[
+            {"SAP":"0",
+            "Marca":"2",
+            "Modelo":"3"}
+        ],
+        "tipo":[
+            {
+                "Blanco":"5",
+                "Alta_Intermedia":"6",
+                "Solo_Voz":"9",
+                "Hotel":"10",
+                "High": "11",
+                "Plus":"12",
+                "Exclusivo":"13",
+                "Deals":"14",
+                "Renovacion":"15"
+            }
+        ],
+        "fila_inicio":"3"
+    },
+    "tipoDatos":{
+        "hoja":"DATOS",
+        "comunes":[
+            {"SAP":"0",
+            "Marca":"2",
+            "Modelo":"3"}
+        ],
+        "tipo":[
+            {
+                "modem_router":"5"
+            }
+        ],
+        "fila_inicio":"3"
+    }
+}

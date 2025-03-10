@@ -1,0 +1,26 @@
+{
+    "campos": {
+        "hoja": "PVP VaP - Pyme",
+        "columnas": [
+            {
+                "marca": "2",
+                "modelo": "3",
+                "precio_cesion": "4",
+                "gama": "6",
+                "meses": "7",
+                "dxcpvp": "26",
+                "dxcvap": "27",
+                "dxcpvp_porta_ep": "29",
+                "dxcvap_porta_ep": "30",
+                "dxcpvp_porta_np": "31",
+                "dxcvap_porta_np": "32",
+                "dxcpvp_porta_vp": "33",
+                "dxcvap_porta_vp": "34",
+                "dxcpvp_porta_pp": "35",
+                "dxcvap_porta_pp": "36",
+                "dxcpvp_porta_tp": "37",
+                "dxcvap_porta_tp": "38"
+            }
+        ]
+    }
+}

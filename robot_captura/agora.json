@@ -1,0 +1,1496 @@
+{
+  "resultados": {
+    "A18015792": {
+      "timeStamp": "2025-03-07T11:03:23.228Z",
+      "cif": "A18015792",
+      "fuente": "agora",
+      "cliente": {
+        "Nombre Cliente:": "PENALVA ALIMENTACION SA",
+        "NIF/CIF Cliente:": "A18015792",
+        "Puntos cliente BUSINESS:": "25802",
+        "Código de Cuenta:": "1.67468716"
+      },
+      "permanencias": [
+        {
+          "telefono": "692853375",
+          "compromisos": [
+            {
+              "Fecha Inicio:": "27/04/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "27/04/2025",
+              "Pen. incumplimiento:": "70 €",
+              "Tipo:": "Tarifa",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Descuento aplicado"
+            },
+            {
+              "Fecha Inicio:": "18/05/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "18/05/2025",
+              "Pen. incumplimiento:": "240 €",
+              "Tipo:": "Datos",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Compra terminal/equipamiento a plazos"
+            }
+          ]
+        },
+        {
+          "telefono": "656897345",
+          "compromisos": [
+            {
+              "Fecha Inicio:": "23/05/2024",
+              "Duración restante:": "15 meses",
+              "Fecha Fin:": "23/05/2026",
+              "Pen. incumplimiento:": "100 €",
+              "Tipo:": "Tarifa",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Compra terminal/equipamiento"
+            },
+            {
+              "Fecha Inicio:": "23/05/2024",
+              "Duración restante:": "15 meses",
+              "Fecha Fin:": "23/05/2026",
+              "Pen. incumplimiento:": "500 €",
+              "Tipo:": "Datos",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Compra terminal/equipamiento"
+            }
+          ]
+        },
+        {
+          "telefono": "635035711",
+          "compromisos": [
+            {
+              "Fecha Inicio:": "23/05/2024",
+              "Duración restante:": "15 meses",
+              "Fecha Fin:": "23/05/2026",
+              "Pen. incumplimiento:": "100 €",
+              "Tipo:": "Tarifa",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Compra terminal/equipamiento"
+            },
+            {
+              "Fecha Inicio:": "23/05/2024",
+              "Duración restante:": "15 meses",
+              "Fecha Fin:": "23/05/2026",
+              "Pen. incumplimiento:": "500 €",
+              "Tipo:": "Datos",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Compra terminal/equipamiento"
+            }
+          ]
+        },
+        {
+          "telefono": "656394827",
+          "compromisos": [
+            {
+              "Fecha Inicio:": "23/05/2024",
+              "Duración restante:": "15 meses",
+              "Fecha Fin:": "23/05/2026",
+              "Pen. incumplimiento:": "100 €",
+              "Tipo:": "Tarifa",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Compra terminal/equipamiento"
+            },
+            {
+              "Fecha Inicio:": "23/05/2024",
+              "Duración restante:": "15 meses",
+              "Fecha Fin:": "23/05/2026",
+              "Pen. incumplimiento:": "500 €",
+              "Tipo:": "Datos",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Compra terminal/equipamiento"
+            }
+          ]
+        },
+        {
+          "telefono": "656392838",
+          "compromisos": [
+            {
+              "Fecha Inicio:": "23/05/2024",
+              "Duración restante:": "15 meses",
+              "Fecha Fin:": "23/05/2026",
+              "Pen. incumplimiento:": "100 €",
+              "Tipo:": "Tarifa",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Compra terminal/equipamiento"
+            },
+            {
+              "Fecha Inicio:": "23/05/2024",
+              "Duración restante:": "15 meses",
+              "Fecha Fin:": "23/05/2026",
+              "Pen. incumplimiento:": "500 €",
+              "Tipo:": "Datos",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Compra terminal/equipamiento"
+            }
+          ]
+        },
+        {
+          "telefono": "656587022",
+          "compromisos": [
+            {
+              "Fecha Inicio:": "23/05/2024",
+              "Duración restante:": "15 meses",
+              "Fecha Fin:": "23/05/2026",
+              "Pen. incumplimiento:": "100 €",
+              "Tipo:": "Tarifa",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Compra terminal/equipamiento"
+            },
+            {
+              "Fecha Inicio:": "23/05/2024",
+              "Duración restante:": "15 meses",
+              "Fecha Fin:": "23/05/2026",
+              "Pen. incumplimiento:": "500 €",
+              "Tipo:": "Datos",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Compra terminal/equipamiento"
+            }
+          ]
+        },
+        {
+          "telefono": "656392259",
+          "compromisos": [
+            {
+              "Fecha Inicio:": "23/05/2024",
+              "Duración restante:": "15 meses",
+              "Fecha Fin:": "23/05/2026",
+              "Pen. incumplimiento:": "100 €",
+              "Tipo:": "Tarifa",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Compra terminal/equipamiento"
+            },
+            {
+              "Fecha Inicio:": "23/05/2024",
+              "Duración restante:": "15 meses",
+              "Fecha Fin:": "23/05/2026",
+              "Pen. incumplimiento:": "500 €",
+              "Tipo:": "Datos",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Compra terminal/equipamiento"
+            }
+          ]
+        },
+        {
+          "telefono": "654141481",
+          "compromisos": [
+            {
+              "Fecha Inicio:": "23/05/2024",
+              "Duración restante:": "15 meses",
+              "Fecha Fin:": "23/05/2026",
+              "Pen. incumplimiento:": "100 €",
+              "Tipo:": "Tarifa",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Compra terminal/equipamiento"
+            },
+            {
+              "Fecha Inicio:": "23/05/2024",
+              "Duración restante:": "15 meses",
+              "Fecha Fin:": "23/05/2026",
+              "Pen. incumplimiento:": "500 €",
+              "Tipo:": "Datos",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Compra terminal/equipamiento"
+            }
+          ]
+        },
+        {
+          "telefono": "635086352",
+          "compromisos": [
+            {
+              "Fecha Inicio:": "23/05/2024",
+              "Duración restante:": "15 meses",
+              "Fecha Fin:": "23/05/2026",
+              "Pen. incumplimiento:": "100 €",
+              "Tipo:": "Tarifa",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Compra terminal/equipamiento"
+            },
+            {
+              "Fecha Inicio:": "23/05/2024",
+              "Duración restante:": "15 meses",
+              "Fecha Fin:": "23/05/2026",
+              "Pen. incumplimiento:": "500 €",
+              "Tipo:": "Datos",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Compra terminal/equipamiento"
+            }
+          ]
+        },
+        {
+          "telefono": "607395739",
+          "compromisos": [
+            {
+              "Fecha Inicio:": "27/04/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "27/04/2025",
+              "Pen. incumplimiento:": "70 €",
+              "Tipo:": "Tarifa",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Descuento aplicado"
+            },
+            {
+              "Fecha Inicio:": "18/05/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "18/05/2025",
+              "Pen. incumplimiento:": "240 €",
+              "Tipo:": "Datos",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Compra terminal/equipamiento a plazos"
+            }
+          ]
+        },
+        {
+          "telefono": "607396355",
+          "compromisos": [
+            {
+              "Fecha Inicio:": "17/12/2024",
+              "Duración restante:": "22 meses",
+              "Fecha Fin:": "17/12/2026",
+              "Pen. incumplimiento:": "200 €",
+              "Tipo:": "Renove",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Compra terminal/equipamiento"
+            },
+            {
+              "Fecha Inicio:": "27/04/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "27/04/2025",
+              "Pen. incumplimiento:": "70 €",
+              "Tipo:": "Tarifa",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Descuento aplicado"
+            },
+            {
+              "Fecha Inicio:": "17/12/2024",
+              "Duración restante:": "22 meses",
+              "Fecha Fin:": "17/12/2026",
+              "Pen. incumplimiento:": "200 €",
+              "Tipo:": "Datos",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Compra terminal/equipamiento"
+            }
+          ]
+        },
+        {
+          "telefono": "607396456",
+          "compromisos": [
+            {
+              "Fecha Inicio:": "27/04/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "27/04/2025",
+              "Pen. incumplimiento:": "70 €",
+              "Tipo:": "Tarifa",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Descuento aplicado"
+            },
+            {
+              "Fecha Inicio:": "18/05/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "18/05/2025",
+              "Pen. incumplimiento:": "240 €",
+              "Tipo:": "Datos",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Compra terminal/equipamiento a plazos"
+            }
+          ]
+        },
+        {
+          "telefono": "607396557",
+          "compromisos": [
+            {
+              "Fecha Inicio:": "27/04/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "27/04/2025",
+              "Pen. incumplimiento:": "70 €",
+              "Tipo:": "Tarifa",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Descuento aplicado"
+            },
+            {
+              "Fecha Inicio:": "18/05/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "18/05/2025",
+              "Pen. incumplimiento:": "240 €",
+              "Tipo:": "Datos",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Compra terminal/equipamiento a plazos"
+            }
+          ]
+        },
+        {
+          "telefono": "609253986",
+          "compromisos": [
+            {
+              "Fecha Inicio:": "27/04/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "27/04/2025",
+              "Pen. incumplimiento:": "70 €",
+              "Tipo:": "Tarifa",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Descuento aplicado"
+            },
+            {
+              "Fecha Inicio:": "17/05/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "17/05/2025",
+              "Pen. incumplimiento:": "160 €",
+              "Tipo:": "Datos",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": ""
+            }
+          ]
+        },
+        {
+          "telefono": "615463675",
+          "compromisos": [
+            {
+              "Fecha Inicio:": "27/04/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "27/04/2025",
+              "Pen. incumplimiento:": "70 €",
+              "Tipo:": "Tarifa",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Descuento aplicado"
+            },
+            {
+              "Fecha Inicio:": "17/05/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "17/05/2025",
+              "Pen. incumplimiento:": "160 €",
+              "Tipo:": "Datos",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": ""
+            }
+          ]
+        },
+        {
+          "telefono": "615849300",
+          "compromisos": [
+            {
+              "Fecha Inicio:": "27/04/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "27/04/2025",
+              "Pen. incumplimiento:": "70 €",
+              "Tipo:": "Tarifa",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Descuento aplicado"
+            },
+            {
+              "Fecha Inicio:": "17/05/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "17/05/2025",
+              "Pen. incumplimiento:": "160 €",
+              "Tipo:": "Datos",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": ""
+            }
+          ]
+        },
+        {
+          "telefono": "615849308",
+          "compromisos": [
+            {
+              "Fecha Inicio:": "27/04/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "27/04/2025",
+              "Pen. incumplimiento:": "70 €",
+              "Tipo:": "Tarifa",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Descuento aplicado"
+            },
+            {
+              "Fecha Inicio:": "17/05/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "17/05/2025",
+              "Pen. incumplimiento:": "160 €",
+              "Tipo:": "Datos",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": ""
+            }
+          ]
+        },
+        {
+          "telefono": "615849309",
+          "compromisos": [
+            {
+              "Fecha Inicio:": "29/11/2023",
+              "Duración restante:": "9 meses",
+              "Fecha Fin:": "29/11/2025",
+              "Pen. incumplimiento:": "110 €",
+              "Tipo:": "Renove",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Compra terminal/equipamiento"
+            },
+            {
+              "Fecha Inicio:": "27/04/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "27/04/2025",
+              "Pen. incumplimiento:": "70 €",
+              "Tipo:": "Tarifa",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Descuento aplicado"
+            },
+            {
+              "Fecha Inicio:": "29/11/2023",
+              "Duración restante:": "9 meses",
+              "Fecha Fin:": "29/11/2025",
+              "Pen. incumplimiento:": "630 €",
+              "Tipo:": "Datos",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Compra terminal/equipamiento"
+            }
+          ]
+        },
+        {
+          "telefono": "625400471",
+          "compromisos": [
+            {
+              "Fecha Inicio:": "27/04/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "27/04/2025",
+              "Pen. incumplimiento:": "70 €",
+              "Tipo:": "Tarifa",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Descuento aplicado"
+            },
+            {
+              "Fecha Inicio:": "17/05/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "17/05/2025",
+              "Pen. incumplimiento:": "160 €",
+              "Tipo:": "Datos",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": ""
+            }
+          ]
+        },
+        {
+          "telefono": "625400505",
+          "compromisos": [
+            {
+              "Fecha Inicio:": "27/04/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "27/04/2025",
+              "Pen. incumplimiento:": "70 €",
+              "Tipo:": "Tarifa",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Descuento aplicado"
+            },
+            {
+              "Fecha Inicio:": "17/05/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "17/05/2025",
+              "Pen. incumplimiento:": "160 €",
+              "Tipo:": "Datos",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": ""
+            }
+          ]
+        },
+        {
+          "telefono": "625400548",
+          "compromisos": [
+            {
+              "Fecha Inicio:": "22/05/2024",
+              "Duración restante:": "15 meses",
+              "Fecha Fin:": "22/05/2026",
+              "Pen. incumplimiento:": "150 €",
+              "Tipo:": "Renove",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Compra terminal/equipamiento"
+            },
+            {
+              "Fecha Inicio:": "27/04/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "27/04/2025",
+              "Pen. incumplimiento:": "70 €",
+              "Tipo:": "Tarifa",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Descuento aplicado"
+            },
+            {
+              "Fecha Inicio:": "22/05/2024",
+              "Duración restante:": "15 meses",
+              "Fecha Fin:": "22/05/2026",
+              "Pen. incumplimiento:": "700 €",
+              "Tipo:": "Datos",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Compra terminal/equipamiento"
+            }
+          ]
+        },
+        {
+          "telefono": "625437940",
+          "compromisos": [
+            {
+              "Fecha Inicio:": "27/04/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "27/04/2025",
+              "Pen. incumplimiento:": "70 €",
+              "Tipo:": "Tarifa",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Descuento aplicado"
+            },
+            {
+              "Fecha Inicio:": "18/05/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "18/05/2025",
+              "Pen. incumplimiento:": "160 €",
+              "Tipo:": "Datos",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Compra terminal/equipamiento"
+            }
+          ]
+        },
+        {
+          "telefono": "627483661",
+          "compromisos": [
+            {
+              "Fecha Inicio:": "27/04/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "27/04/2025",
+              "Pen. incumplimiento:": "70 €",
+              "Tipo:": "Tarifa",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Descuento aplicado"
+            },
+            {
+              "Fecha Inicio:": "17/05/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "17/05/2025",
+              "Pen. incumplimiento:": "160 €",
+              "Tipo:": "Datos",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": ""
+            }
+          ]
+        },
+        {
+          "telefono": "627483663",
+          "compromisos": [
+            {
+              "Fecha Inicio:": "27/04/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "27/04/2025",
+              "Pen. incumplimiento:": "70 €",
+              "Tipo:": "Tarifa",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Descuento aplicado"
+            },
+            {
+              "Fecha Inicio:": "17/05/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "17/05/2025",
+              "Pen. incumplimiento:": "160 €",
+              "Tipo:": "Datos",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": ""
+            }
+          ]
+        },
+        {
+          "telefono": "627483672",
+          "compromisos": [
+            {
+              "Fecha Inicio:": "27/04/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "27/04/2025",
+              "Pen. incumplimiento:": "70 €",
+              "Tipo:": "Tarifa",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Descuento aplicado"
+            },
+            {
+              "Fecha Inicio:": "17/05/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "17/05/2025",
+              "Pen. incumplimiento:": "160 €",
+              "Tipo:": "Datos",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": ""
+            }
+          ]
+        },
+        {
+          "telefono": "627483673",
+          "compromisos": [
+            {
+              "Fecha Inicio:": "27/04/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "27/04/2025",
+              "Pen. incumplimiento:": "70 €",
+              "Tipo:": "Tarifa",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Descuento aplicado"
+            },
+            {
+              "Fecha Inicio:": "18/05/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "18/05/2025",
+              "Pen. incumplimiento:": "160 €",
+              "Tipo:": "Datos",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Compra terminal/equipamiento"
+            }
+          ]
+        },
+        {
+          "telefono": "635672847",
+          "compromisos": [
+            {
+              "Fecha Inicio:": "27/04/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "27/04/2025",
+              "Pen. incumplimiento:": "70 €",
+              "Tipo:": "Tarifa",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Descuento aplicado"
+            },
+            {
+              "Fecha Inicio:": "18/05/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "18/05/2025",
+              "Pen. incumplimiento:": "160 €",
+              "Tipo:": "Datos",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Compra terminal/equipamiento"
+            }
+          ]
+        },
+        {
+          "telefono": "635675621",
+          "compromisos": [
+            {
+              "Fecha Inicio:": "27/04/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "27/04/2025",
+              "Pen. incumplimiento:": "70 €",
+              "Tipo:": "Tarifa",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Descuento aplicado"
+            },
+            {
+              "Fecha Inicio:": "18/05/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "18/05/2025",
+              "Pen. incumplimiento:": "560 €",
+              "Tipo:": "Datos",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Compra terminal/equipamiento"
+            }
+          ]
+        },
+        {
+          "telefono": "651875921",
+          "compromisos": [
+            {
+              "Fecha Inicio:": "27/04/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "27/04/2025",
+              "Pen. incumplimiento:": "70 €",
+              "Tipo:": "Tarifa",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Descuento aplicado"
+            },
+            {
+              "Fecha Inicio:": "17/05/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "17/05/2025",
+              "Pen. incumplimiento:": "160 €",
+              "Tipo:": "Datos",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": ""
+            }
+          ]
+        },
+        {
+          "telefono": "649427616",
+          "compromisos": [
+            {
+              "Fecha Inicio:": "27/04/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "27/04/2025",
+              "Pen. incumplimiento:": "70 €",
+              "Tipo:": "Tarifa",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Descuento aplicado"
+            },
+            {
+              "Fecha Inicio:": "18/05/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "18/05/2025",
+              "Pen. incumplimiento:": "240 €",
+              "Tipo:": "Datos",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Compra terminal/equipamiento a plazos"
+            }
+          ]
+        },
+        {
+          "telefono": "651885005",
+          "compromisos": [
+            {
+              "Fecha Inicio:": "22/05/2024",
+              "Duración restante:": "15 meses",
+              "Fecha Fin:": "22/05/2026",
+              "Pen. incumplimiento:": "150 €",
+              "Tipo:": "Renove",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Compra terminal/equipamiento"
+            },
+            {
+              "Fecha Inicio:": "27/04/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "27/04/2025",
+              "Pen. incumplimiento:": "70 €",
+              "Tipo:": "Tarifa",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Descuento aplicado"
+            },
+            {
+              "Fecha Inicio:": "22/05/2024",
+              "Duración restante:": "15 meses",
+              "Fecha Fin:": "22/05/2026",
+              "Pen. incumplimiento:": "700 €",
+              "Tipo:": "Datos",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Compra terminal/equipamiento"
+            }
+          ]
+        },
+        {
+          "telefono": "655334450",
+          "compromisos": [
+            {
+              "Fecha Inicio:": "27/04/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "27/04/2025",
+              "Pen. incumplimiento:": "70 €",
+              "Tipo:": "Tarifa",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Descuento aplicado"
+            },
+            {
+              "Fecha Inicio:": "17/05/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "17/05/2025",
+              "Pen. incumplimiento:": "160 €",
+              "Tipo:": "Datos",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": ""
+            }
+          ]
+        },
+        {
+          "telefono": "659678195",
+          "compromisos": [
+            {
+              "Fecha Inicio:": "27/04/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "27/04/2025",
+              "Pen. incumplimiento:": "70 €",
+              "Tipo:": "Tarifa",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Descuento aplicado"
+            },
+            {
+              "Fecha Inicio:": "17/05/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "17/05/2025",
+              "Pen. incumplimiento:": "160 €",
+              "Tipo:": "Datos",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": ""
+            }
+          ]
+        },
+        {
+          "telefono": "660543031",
+          "compromisos": [
+            {
+              "Fecha Inicio:": "27/04/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "27/04/2025",
+              "Pen. incumplimiento:": "70 €",
+              "Tipo:": "Tarifa",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Descuento aplicado"
+            },
+            {
+              "Fecha Inicio:": "18/05/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "18/05/2025",
+              "Pen. incumplimiento:": "160 €",
+              "Tipo:": "Datos",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Compra terminal/equipamiento"
+            }
+          ]
+        },
+        {
+          "telefono": "664351889",
+          "compromisos": [
+            {
+              "Fecha Inicio:": "27/04/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "27/04/2025",
+              "Pen. incumplimiento:": "70 €",
+              "Tipo:": "Tarifa",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Descuento aplicado"
+            },
+            {
+              "Fecha Inicio:": "18/05/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "18/05/2025",
+              "Pen. incumplimiento:": "240 €",
+              "Tipo:": "Datos",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Compra terminal/equipamiento a plazos"
+            }
+          ]
+        },
+        {
+          "telefono": "664352604",
+          "compromisos": [
+            {
+              "Fecha Inicio:": "27/04/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "27/04/2025",
+              "Pen. incumplimiento:": "70 €",
+              "Tipo:": "Tarifa",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Descuento aplicado"
+            },
+            {
+              "Fecha Inicio:": "17/05/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "17/05/2025",
+              "Pen. incumplimiento:": "160 €",
+              "Tipo:": "Datos",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": ""
+            }
+          ]
+        },
+        {
+          "telefono": "666120345",
+          "compromisos": [
+            {
+              "Fecha Inicio:": "27/04/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "27/04/2025",
+              "Pen. incumplimiento:": "70 €",
+              "Tipo:": "Tarifa",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Descuento aplicado"
+            },
+            {
+              "Fecha Inicio:": "18/05/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "18/05/2025",
+              "Pen. incumplimiento:": "240 €",
+              "Tipo:": "Datos",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Compra terminal/equipamiento a plazos"
+            }
+          ]
+        },
+        {
+          "telefono": "666707073",
+          "compromisos": [
+            {
+              "Fecha Inicio:": "27/04/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "27/04/2025",
+              "Pen. incumplimiento:": "70 €",
+              "Tipo:": "Tarifa",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Descuento aplicado"
+            },
+            {
+              "Fecha Inicio:": "17/05/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "17/05/2025",
+              "Pen. incumplimiento:": "160 €",
+              "Tipo:": "Datos",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": ""
+            }
+          ]
+        },
+        {
+          "telefono": "670081699",
+          "compromisos": [
+            {
+              "Fecha Inicio:": "27/04/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "27/04/2025",
+              "Pen. incumplimiento:": "70 €",
+              "Tipo:": "Tarifa",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Descuento aplicado"
+            },
+            {
+              "Fecha Inicio:": "17/05/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "17/05/2025",
+              "Pen. incumplimiento:": "160 €",
+              "Tipo:": "Datos",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": ""
+            }
+          ]
+        },
+        {
+          "telefono": "670087473",
+          "compromisos": [
+            {
+              "Fecha Inicio:": "27/04/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "27/04/2025",
+              "Pen. incumplimiento:": "70 €",
+              "Tipo:": "Tarifa",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Descuento aplicado"
+            },
+            {
+              "Fecha Inicio:": "18/05/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "18/05/2025",
+              "Pen. incumplimiento:": "240 €",
+              "Tipo:": "Datos",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Compra terminal/equipamiento a plazos"
+            }
+          ]
+        },
+        {
+          "telefono": "695229073",
+          "compromisos": [
+            {
+              "Fecha Inicio:": "27/04/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "27/04/2025",
+              "Pen. incumplimiento:": "70 €",
+              "Tipo:": "Tarifa",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Descuento aplicado"
+            },
+            {
+              "Fecha Inicio:": "17/05/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "17/05/2025",
+              "Pen. incumplimiento:": "160 €",
+              "Tipo:": "Datos",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": ""
+            }
+          ]
+        },
+        {
+          "telefono": "695229068",
+          "compromisos": [
+            {
+              "Fecha Inicio:": "27/04/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "27/04/2025",
+              "Pen. incumplimiento:": "70 €",
+              "Tipo:": "Tarifa",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Descuento aplicado"
+            },
+            {
+              "Fecha Inicio:": "18/05/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "18/05/2025",
+              "Pen. incumplimiento:": "160 €",
+              "Tipo:": "Datos",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Compra terminal/equipamiento"
+            }
+          ]
+        },
+        {
+          "telefono": "685330838",
+          "compromisos": [
+            {
+              "Fecha Inicio:": "27/04/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "27/04/2025",
+              "Pen. incumplimiento:": "70 €",
+              "Tipo:": "Tarifa",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Descuento aplicado"
+            },
+            {
+              "Fecha Inicio:": "18/05/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "18/05/2025",
+              "Pen. incumplimiento:": "240 €",
+              "Tipo:": "Datos",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Compra terminal/equipamiento a plazos"
+            }
+          ]
+        },
+        {
+          "telefono": "685330840",
+          "compromisos": [
+            {
+              "Fecha Inicio:": "27/04/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "27/04/2025",
+              "Pen. incumplimiento:": "70 €",
+              "Tipo:": "Tarifa",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Descuento aplicado"
+            },
+            {
+              "Fecha Inicio:": "18/05/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "18/05/2025",
+              "Pen. incumplimiento:": "160 €",
+              "Tipo:": "Datos",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Compra terminal/equipamiento"
+            }
+          ]
+        },
+        {
+          "telefono": "689038396",
+          "compromisos": [
+            {
+              "Fecha Inicio:": "27/04/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "27/04/2025",
+              "Pen. incumplimiento:": "70 €",
+              "Tipo:": "Tarifa",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Descuento aplicado"
+            },
+            {
+              "Fecha Inicio:": "18/05/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "18/05/2025",
+              "Pen. incumplimiento:": "160 €",
+              "Tipo:": "Datos",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Compra terminal/equipamiento"
+            }
+          ]
+        },
+        {
+          "telefono": "685335804",
+          "compromisos": [
+            {
+              "Fecha Inicio:": "27/04/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "27/04/2025",
+              "Pen. incumplimiento:": "70 €",
+              "Tipo:": "Tarifa",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Descuento aplicado"
+            },
+            {
+              "Fecha Inicio:": "18/05/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "18/05/2025",
+              "Pen. incumplimiento:": "160 €",
+              "Tipo:": "Datos",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Compra terminal/equipamiento"
+            }
+          ]
+        },
+        {
+          "telefono": "689038395",
+          "compromisos": [
+            {
+              "Fecha Inicio:": "27/04/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "27/04/2025",
+              "Pen. incumplimiento:": "70 €",
+              "Tipo:": "Tarifa",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Descuento aplicado"
+            },
+            {
+              "Fecha Inicio:": "18/05/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "18/05/2025",
+              "Pen. incumplimiento:": "240 €",
+              "Tipo:": "Datos",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Compra terminal/equipamiento a plazos"
+            }
+          ]
+        },
+        {
+          "telefono": "615849304",
+          "compromisos": [
+            {
+              "Fecha Inicio:": "27/04/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "27/04/2025",
+              "Pen. incumplimiento:": "70 €",
+              "Tipo:": "Tarifa",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Descuento aplicado"
+            },
+            {
+              "Fecha Inicio:": "18/05/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "18/05/2025",
+              "Pen. incumplimiento:": "560 €",
+              "Tipo:": "Datos",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Compra terminal/equipamiento"
+            }
+          ]
+        },
+        {
+          "telefono": "607977600",
+          "compromisos": [
+            {
+              "Fecha Inicio:": "27/04/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "27/04/2025",
+              "Pen. incumplimiento:": "70 €",
+              "Tipo:": "Tarifa",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Descuento aplicado"
+            },
+            {
+              "Fecha Inicio:": "17/05/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "17/05/2025",
+              "Pen. incumplimiento:": "160 €",
+              "Tipo:": "Datos",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": ""
+            }
+          ]
+        },
+        {
+          "telefono": "670082370",
+          "compromisos": [
+            {
+              "Fecha Inicio:": "27/04/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "27/04/2025",
+              "Pen. incumplimiento:": "70 €",
+              "Tipo:": "Tarifa",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Descuento aplicado"
+            },
+            {
+              "Fecha Inicio:": "18/05/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "18/05/2025",
+              "Pen. incumplimiento:": "240 €",
+              "Tipo:": "Datos",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Compra terminal/equipamiento a plazos"
+            }
+          ]
+        },
+        {
+          "telefono": "691659876",
+          "compromisos": [
+            {
+              "Fecha Inicio:": "27/04/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "27/04/2025",
+              "Pen. incumplimiento:": "70 €",
+              "Tipo:": "Tarifa",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Descuento aplicado"
+            },
+            {
+              "Fecha Inicio:": "18/05/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "18/05/2025",
+              "Pen. incumplimiento:": "240 €",
+              "Tipo:": "Datos",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Compra terminal/equipamiento a plazos"
+            }
+          ]
+        },
+        {
+          "telefono": "664549032",
+          "compromisos": [
+            {
+              "Fecha Inicio:": "27/04/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "27/04/2025",
+              "Pen. incumplimiento:": "70 €",
+              "Tipo:": "Tarifa",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Descuento aplicado"
+            },
+            {
+              "Fecha Inicio:": "18/05/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "18/05/2025",
+              "Pen. incumplimiento:": "240 €",
+              "Tipo:": "Datos",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Compra terminal/equipamiento a plazos"
+            }
+          ]
+        },
+        {
+          "telefono": "690318397",
+          "compromisos": [
+            {
+              "Fecha Inicio:": "27/04/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "27/04/2025",
+              "Pen. incumplimiento:": "70 €",
+              "Tipo:": "Tarifa",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Descuento aplicado"
+            },
+            {
+              "Fecha Inicio:": "18/05/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "18/05/2025",
+              "Pen. incumplimiento:": "240 €",
+              "Tipo:": "Datos",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Compra terminal/equipamiento a plazos"
+            }
+          ]
+        },
+        {
+          "telefono": "654143239",
+          "compromisos": [
+            {
+              "Fecha Inicio:": "27/04/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "27/04/2025",
+              "Pen. incumplimiento:": "70 €",
+              "Tipo:": "Tarifa",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": "Móvil: Descuento aplicado"
+            },
+            {
+              "Fecha Inicio:": "17/05/2023",
+              "Duración restante:": "2 meses",
+              "Fecha Fin:": "17/05/2025",
+              "Pen. incumplimiento:": "160 €",
+              "Tipo:": "Datos",
+              "Modalidad:": "Estándar",
+              "Motivo Alta:": ""
+            }
+          ]
+        }
+      ],
+      "permanencias_resumen": {
+        "2025-04-27": {
+          "importe": 3220,
+          "telefonos": [
+            "692853375",
+            "607395739",
+            "607396355",
+            "607396456",
+            "607396557",
+            "609253986",
+            "615463675",
+            "615849300",
+            "615849308",
+            "615849309",
+            "625400471",
+            "625400505",
+            "625400548",
+            "625437940",
+            "627483661",
+            "627483663",
+            "627483672",
+            "627483673",
+            "635672847",
+            "635675621",
+            "651875921",
+            "649427616",
+            "651885005",
+            "655334450",
+            "659678195",
+            "660543031",
+            "664351889",
+            "664352604",
+            "666120345",
+            "666707073",
+            "670081699",
+            "670087473",
+            "695229073",
+            "695229068",
+            "685330838",
+            "685330840",
+            "689038396",
+            "685335804",
+            "689038395",
+            "615849304",
+            "607977600",
+            "670082370",
+            "691659876",
+            "664549032",
+            "690318397",
+            "654143239"
+          ]
+        },
+        "2025-05-18": {
+          "importe": 5760,
+          "telefonos": [
+            "692853375",
+            "607395739",
+            "607396456",
+            "607396557",
+            "625437940",
+            "627483673",
+            "635672847",
+            "635675621",
+            "649427616",
+            "660543031",
+            "664351889",
+            "666120345",
+            "670087473",
+            "695229068",
+            "685330838",
+            "685330840",
+            "689038396",
+            "685335804",
+            "689038395",
+            "615849304",
+            "670082370",
+            "691659876",
+            "664549032",
+            "690318397"
+          ]
+        },
+        "2026-05-23": {
+          "importe": 4800,
+          "telefonos": [
+            "656897345",
+            "635035711",
+            "656394827",
+            "656392838",
+            "656587022",
+            "656392259",
+            "654141481",
+            "635086352"
+          ]
+        },
+        "2026-12-17": {
+          "importe": 400,
+          "telefonos": [
+            "607396355"
+          ]
+        },
+        "2025-05-17": {
+          "importe": 2880,
+          "telefonos": [
+            "609253986",
+            "615463675",
+            "615849300",
+            "615849308",
+            "625400471",
+            "625400505",
+            "627483661",
+            "627483663",
+            "627483672",
+            "651875921",
+            "655334450",
+            "659678195",
+            "664352604",
+            "666707073",
+            "670081699",
+            "695229073",
+            "607977600",
+            "654143239"
+          ]
+        },
+        "2025-11-29": {
+          "importe": 740,
+          "telefonos": [
+            "615849309"
+          ]
+        },
+        "2026-05-22": {
+          "importe": 1700,
+          "telefonos": [
+            "625400548",
+            "651885005"
+          ]
+        }
+      },
+      "lineas": {
+        "numero_total": 54,
+        "numero_con_permanencia": 54,
+        "numero_sin_permanencia": 0,
+        "con_permanencia": [
+          "692853375",
+          "656897345",
+          "635035711",
+          "656394827",
+          "656392838",
+          "656587022",
+          "656392259",
+          "654141481",
+          "635086352",
+          "607395739",
+          "607396355",
+          "607396456",
+          "607396557",
+          "609253986",
+          "615463675",
+          "615849300",
+          "615849308",
+          "615849309",
+          "625400471",
+          "625400505",
+          "625400548",
+          "625437940",
+          "627483661",
+          "627483663",
+          "627483672",
+          "627483673",
+          "635672847",
+          "635675621",
+          "651875921",
+          "649427616",
+          "651885005",
+          "655334450",
+          "659678195",
+          "660543031",
+          "664351889",
+          "664352604",
+          "666120345",
+          "666707073",
+          "670081699",
+          "670087473",
+          "695229073",
+          "695229068",
+          "685330838",
+          "685330840",
+          "689038396",
+          "685335804",
+          "689038395",
+          "615849304",
+          "607977600",
+          "670082370",
+          "691659876",
+          "664549032",
+          "690318397",
+          "654143239"
+        ],
+        "sin_permanencia": []
+      }
+    }
+  },
+  "noEncontrados": [],
+  "errores": []
+}

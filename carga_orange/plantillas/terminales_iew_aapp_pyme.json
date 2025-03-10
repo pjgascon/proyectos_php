@@ -1,0 +1,21 @@
+{
+    "campos": {
+        "hoja": "PVP Subv IEW - Pyme AAPP",
+        "columnas": [
+            {
+                "marca": "2",
+                "modelo": "3",
+                "precio_cesion": "4",
+                "gama": "6",
+                "captaEntradaPro": "9",
+                "captaNormalPro": "10",
+                "captaValorPro": "11",
+                "captaPremiumPro": "12",
+                "portaEntradaPro": "14",
+                "portaNormalPro": "15",
+                "portaValorPro": "16",
+                "portaPremiumPro": "17"
+            }
+        ]
+    }
+}
