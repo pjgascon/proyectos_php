@@ -1,0 +1,113 @@
+{
+    "Movil24":{
+        "hoja":"Movil_pc_genT",
+        "comunes":[
+            {"SAP":"2",
+            "Marca":"0",
+            "Modelo":"1"}
+        ],
+        "tipo":[
+            {
+                "RED":"97",
+                "REDTotal":"101",
+                "REDCuota":"100",
+                "REDInicial":"99",
+                "BASICA":"87",
+                "BASICATotal":"91",
+                "BASICACuota":"90",
+                "BASICAInicial":"89",
+                "MAX":"87",
+                "MAXTotal":"91",
+                "MAXCuota":"90",
+                "MAXInicial":"89",
+                "Descripcion":"+RED"
+            }
+        ],
+        "fila_inicio":"2"
+    },
+    "One36":{
+        "hoja":"Paquete one 36meses",
+        "comunes":[
+            {"SAP":"2",
+            "Marca":"0",
+            "Modelo":"1"}
+        ],
+        "tipo":[
+            {
+                "BasicaInicial":"3",
+                "BasicaCuota":"4",
+                "BasicaTotal":"5",
+                "MaxInicial":"6",
+                "MaxCuota": "7",
+                "MaxTotal":"8",
+                "DuoInicial":"9",
+                "DuoCuota": "10",
+                "DuoTotal":"11",
+                "HogarNegocioInicial":"12",
+                "HogarNegocioCuota": "13",
+                "HogarNegocioTotal":"14"
+            }
+        ],
+        "fila_inicio":"2"
+    },
+    "LineasAdicionales24":{
+        "hoja":"Lineas Adicionales 24meses",
+        "comunes":[
+            {"SAP":"2",
+            "Marca":"0",
+            "Modelo":"1"}
+        ],
+        "tipo":[
+            {
+                "RedInicial":"3",
+                "RedCuota":"4",
+                "RedTotal":"5",
+                "BasicaInicial":"6",
+                "BasicaCuota": "7",
+                "BasicaTotal":"8",
+                "MaxInicial":"9",
+                "MaxCuota": "10",
+                "MaxTotal":"11"
+            }
+        ],
+        "fila_inicio":"2"
+    },
+    "LineasAdicionales36":{
+        "hoja":"Lineas Adicionales 36meses",
+        "comunes":[
+            {"SAP":"2",
+            "Marca":"0",
+            "Modelo":"1"}
+        ],
+        "tipo":[
+            {
+                "RedInicial":"3",
+                "RedCuota":"4",
+                "RedTotal":"5",
+                "BasicaInicial":"6",
+                "BasicaCuota": "7",
+                "BasicaTotal":"8",
+                "MaxInicial":"9",
+                "MaxCuota": "10",
+                "MaxTotal":"11"
+            }
+        ],
+        "fila_inicio":"2"
+    },
+    "Fijo":{
+        "hoja":"Fijos e internet",
+        "comunes":[
+            {"SAP":"2",
+            "Marca":"0",
+            "Modelo":"1"}
+        ],
+        "tipo":[
+            {
+                "Inicial":"3",
+                "Cuota":"4",
+                "Total":"5"
+            }
+        ],
+        "fila_inicio":"2"
+    }
+}

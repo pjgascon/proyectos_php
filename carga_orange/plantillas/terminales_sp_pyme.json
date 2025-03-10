@@ -1,0 +1,23 @@
+{
+    "campos": {
+        "hoja": "PVP Subv - Sol Pers Pyme",
+        "columnas": [
+            {
+                "marca": "2",
+                "modelo": "3",
+                "precio_cesion": "4",
+                "gama": "6",
+                "captaEntradaPro": "21",
+                "captaNormalPro": "22",
+                "captaValorPro": "23",
+                "captaPremiumPro": "24",
+                "captaTopPro": "25",
+                "portaEntradaPro": "27",
+                "portaNormalPro": "28",
+                "portaValorPro": "29",
+                "portaPremiumPro": "30",
+                "portaTopPro": "31"
+            }
+        ]
+    }
+}

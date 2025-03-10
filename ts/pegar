@@ -1,0 +1,8 @@
+#Creo el archivo para unirlos en uno
+for ((i = 1; i < 431; i++))
+do
+    printf "file '%s'\n" ./$i.ts >> milista.txt
+done
+ffmpeg -f concat -safe 0 -i milista.txt -c copy output.ts
+
+#ffmpeg -i output.ts -c:v libx264 -c:a aac -max_muxing_queue_size 9999 output.mp4

@@ -1,0 +1,24 @@
+{
+    "campos": {
+        "hoja": "PVP VaP IEW Pro - Pyme",
+        "columnas": [
+            {
+                "marca": "2",
+                "modelo": "3",
+                "precio_cesion": "4",
+                "gama": "6",
+                "meses": "7",
+                "dxcpvp": "24",
+                "dxcvap": "25",
+                "dxcpvp_porta_ep": "27",
+                "dxcvap_porta_ep": "28",
+                "dxcpvp_porta_np": "29",
+                "dxcvap_porta_np": "30",
+                "dxcpvp_porta_vp": "31",
+                "dxcvap_porta_vp": "32",
+                "dxcpvp_porta_pp": "33",
+                "dxcvap_porta_pp": "34"
+            }
+        ]
+    }
+}

@@ -1,0 +1,92 @@
+{
+    "campos": {
+        "hoja": "MR",
+        "tarifas": [
+            {
+                "optima": [
+                    {
+                        "fila": 6,
+                        "modulo": 1,
+                        "paquete_voz_datos_20": 2,
+                        "paquete_voz_datos_40": 3,
+                        "paquete_voz_datos_mas_40": 4,
+                        "captacion": 5,
+                        "portabilidad": 6,
+                        "extracomision_terminal": 7,
+                        "puntos": 8,
+                        "extracomision_estrategica": 9,
+                        "extracomision_terminal_36": 10
+                    }
+                ],
+                "solucion_personalizada": [
+                    {
+                        "fila": 18,
+                        "modulo": 1,
+                        "paquete_voz_datos_20": 2,
+                        "paquete_voz_datos_40": 3,
+                        "paquete_voz_datos_mas_40": 4,
+                        "captacion": 5,
+                        "portabilidad": 6,
+                        "extracomision_terminal": 7,
+                        "puntos": 8,
+                        "extracomision_estrategica": 9,
+                        "extracomision_terminal_36": 10
+                    }
+                ],
+                "iew": [
+                    {
+                        "fila": 54,
+                        "modulo": 1,
+                        "alta": 2,
+                        "puntos": 3,
+                        "extracomision_estrategica": 4
+                    }
+                ],
+                "conecta_pymes": [
+                    {
+                        "fila": 68,
+                        "modulo": 1,
+                        "alta": 2,
+                        "puntos": 3,
+                        "extracomision_estrategica": 4
+                    }
+                ],
+                "conecta_pymes_centralita": [
+                    {
+                        "fila": 81,
+                        "modulo": 1,
+                        "alta": 2,
+                        "puntos": 3,
+                        "extracomision_estrategica": 4
+                    }
+                ],
+                "network_plus": [
+                    {
+                        "fila": 100,
+                        "modulo": 1,
+                        "alta": 2,
+                        "puntos": 3,
+                        "extracomision_estrategica": 4
+                    }
+                ],
+                "conecta_empresas": [
+                    {
+                        "fila": 108,
+                        "modulo": 1,
+                        "alta": 2,
+                        "puntos": 3,
+                        "extracomision_estrategica": 4
+                    }
+                ],
+                "svas": [
+                    {
+                        "fila": 108,
+                        "alta": 2,
+                        "puntos": 3,
+                        "extracomision_estrategica": 4
+                    }
+                ]
+            }
+        ]
+    }
+}
