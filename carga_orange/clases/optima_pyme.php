@@ -20,7 +20,7 @@ class optimaPyme
 
         if (!is_null($version))
             $version++;
-        
+
         $plantilla = json_decode(file_get_contents(getcwd() . "/plantillas/terminales_optima_pyme.json"));
         $hoja = $plantilla->campos->hoja;
 
@@ -49,7 +49,7 @@ class optimaPyme
             $nFilas = $hojaActiva->getHighestRow();
 
             for ($i = 0; $i < $nFilas; $i++) {
-                $valor = $hojaActiva->getCellByColumnAndRow($columnaMarca, $i);
+                $valor = $hojaActiva->getCell($columnaMarca . $i);
                 if (strtoupper($valor) == "MARCA") {
                     $filaInicio = $i + 1;
                     break;
@@ -57,20 +57,20 @@ class optimaPyme
             }
 
             for ($i = $filaInicio; $i < $nFilas; $i++) {
-                $marca = Utilidades::codificarUTF(addslashes($hojaActiva->getCellByColumnAndRow($columnaMarca, $i)));
-                $modelo = Utilidades::codificarUTF(addslashes($hojaActiva->getCellByColumnAndRow($columnaModelo, $i)));
-                $precioCesion = $hojaActiva->getCellByColumnAndRow($columnaPrecioCesion, $i);
-                $gama = Utilidades::codificarUTF(addslashes($hojaActiva->getCellByColumnAndRow($columnaGama, $i)));
-                $dxcPvpCaptaEp = $hojaActiva->getCellByColumnAndRow($columnaDxcPvpCaptaEp, $i);
-                $dxcCaptaEn = $hojaActiva->getCellByColumnAndRow($columnaDxcCaptaEn, $i);
-                $dxcCaptaVp = $hojaActiva->getCellByColumnAndRow($columnaDxcCaptaVp, $i);
-                $dxcCaptaPp = $hojaActiva->getCellByColumnAndRow($columnaDxcCaptaPp, $i);
-                $dxcCaptaTp = $hojaActiva->getCellByColumnAndRow($columnaDxcCaptaTp, $i);
-                $dxcPortaEp = $hojaActiva->getCellByColumnAndRow($columnaDxcPortaEp, $i);
-                $dxcPortaEn = $hojaActiva->getCellByColumnAndRow($columnaDxcPortaEn, $i);
-                $dxcPortaVp = $hojaActiva->getCellByColumnAndRow($columnaDxcPortaVp, $i);
-                $dxcPortaPp = $hojaActiva->getCellByColumnAndRow($columnaDxcPortaPp, $i);
-                $dxcPortaTp = $hojaActiva->getCellByColumnAndRow($columnaDxcPortaTp, $i);
+                $marca = $hojaActiva->getCell($columnaMarca . $i);
+                $modelo = $hojaActiva->getCell($columnaModelo . $i);
+                $precioCesion = $hojaActiva->getCell($columnaPrecioCesion . $i);
+                $gama = $hojaActiva->getCell($columnaGama . $i);
+                $dxcPvpCaptaEp = $hojaActiva->getCell($columnaDxcPvpCaptaEp . $i);
+                $dxcCaptaEn = $hojaActiva->getCell($columnaDxcCaptaEn . $i);
+                $dxcCaptaVp = $hojaActiva->getCell($columnaDxcCaptaVp . $i);
+                $dxcCaptaPp = $hojaActiva->getCell($columnaDxcCaptaPp . $i);
+                $dxcCaptaTp = $hojaActiva->getCell($columnaDxcCaptaTp . $i);
+                $dxcPortaEp = $hojaActiva->getCell($columnaDxcPortaEp . $i);
+                $dxcPortaEn = $hojaActiva->getCell($columnaDxcPortaEn . $i);
+                $dxcPortaVp = $hojaActiva->getCell($columnaDxcPortaVp . $i);
+                $dxcPortaPp = $hojaActiva->getCell($columnaDxcPortaPp . $i);
+                $dxcPortaTp = $hojaActiva->getCell($columnaDxcPortaTp . $i);
 
                 $captaEp = (is_numeric(strval($dxcPvpCaptaEp))) ? $dxcPvpCaptaEp : -1;
                 $captaNp = (is_numeric(strval($dxcCaptaEn))) ? strval($dxcCaptaEn) : -1;

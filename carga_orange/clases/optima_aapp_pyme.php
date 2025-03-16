@@ -50,7 +50,7 @@ class terminalesOptimaAAPPPyme
             $nFilas = $hojaActiva->getHighestRow();
 
             for ($i = 0; $i < $nFilas; $i++) {
-                $valor = $hojaActiva->getCellByColumnAndRow($columnaMarca, $i);
+                $valor = $hojaActiva->getCell($columnaMarca . $i);
                 if (strtoupper($valor) == "MARCA") {
                     $filaInicio = $i + 1;
                     break;
@@ -58,20 +58,20 @@ class terminalesOptimaAAPPPyme
             }
 
             for ($i = $filaInicio; $i < $nFilas; $i++) {
-                $marca = Utilidades::codificarUTF(addslashes($hojaActiva->getCellByColumnAndRow($columnaMarca, $i)));
-                $modelo = Utilidades::codificarUTF(addslashes($hojaActiva->getCellByColumnAndRow($columnaModelo, $i)));
-                $precioCesion = $hojaActiva->getCellByColumnAndRow($columnaPrecioCesion, $i);
-                $gama = Utilidades::codificarUTF(addslashes($hojaActiva->getCellByColumnAndRow($columnaGama, $i)));
-                $captaEntradaPro = $hojaActiva->getCellByColumnAndRow($columnaCaptaEntradaPro, $i);
-                $captaNormalPro = $hojaActiva->getCellByColumnAndRow($columnaCaptaNormalPro, $i);
-                $captaValorPro = $hojaActiva->getCellByColumnAndRow($columnaCaptaValorPro, $i);
-                $captaPremiumPro = $hojaActiva->getCellByColumnAndRow($columnaCaptaPremiumPro, $i);
-                $captaTopPro = $hojaActiva->getCellByColumnAndRow($columnaCaptaTopPro, $i);
-                $portaEntradaPro = $hojaActiva->getCellByColumnAndRow($columnaPortaEntradaPro, $i);
-                $portaNormalPro = $hojaActiva->getCellByColumnAndRow($columnaPortaNormalPro, $i);
-                $portaValorPro = $hojaActiva->getCellByColumnAndRow($columnaPortaValorPro, $i);
-                $portaPremiumPro = $hojaActiva->getCellByColumnAndRow($columnaPortaPremiumPro, $i);
-                $portaTopPro = $hojaActiva->getCellByColumnAndRow($columnaPortaTopPro, $i);
+                $marca = Utilidades::codificarUTF(addslashes($hojaActiva->getCell($columnaMarca . $i)));
+                $modelo = Utilidades::codificarUTF(addslashes($hojaActiva->getCell($columnaModelo . $i)));
+                $precioCesion = Utilidades::codificarUTF(addslashes($hojaActiva->getCell($columnaPrecioCesion . $i)));
+                $gama = Utilidades::codificarUTF(addslashes($hojaActiva->getCell($columnaGama . $i)));
+                $captaEntradaPro = Utilidades::codificarUTF(addslashes($hojaActiva->getCell($columnaCaptaEntradaPro . $i)));
+                $captaNormalPro = Utilidades::codificarUTF(addslashes($hojaActiva->getCell($columnaCaptaNormalPro . $i)));
+                $captaValorPro = Utilidades::codificarUTF(addslashes($hojaActiva->getCell($columnaCaptaValorPro . $i)));
+                $captaPremiumPro = Utilidades::codificarUTF(addslashes($hojaActiva->getCell($columnaCaptaPremiumPro . $i)));
+                $captaTopPro = Utilidades::codificarUTF(addslashes($hojaActiva->getCell($columnaCaptaTopPro . $i)));
+                $portaEntradaPro = Utilidades::codificarUTF(addslashes($hojaActiva->getCell($columnaPortaEntradaPro . $i)));
+                $portaNormalPro = Utilidades::codificarUTF(addslashes($hojaActiva->getCell($columnaPortaNormalPro . $i)));
+                $portaValorPro = Utilidades::codificarUTF(addslashes($hojaActiva->getCell($columnaPortaValorPro . $i)));
+                $portaPremiumPro = Utilidades::codificarUTF(addslashes($hojaActiva->getCell($columnaPortaPremiumPro . $i)));
+                $portaTopPro = Utilidades::codificarUTF(addslashes($hojaActiva->getCell($columnaPortaTopPro . $i)));
 
                 $cEntadaPro = (is_numeric(strval($captaEntradaPro))) ? strval($captaEntradaPro) : -1;
                 $cNormalPro = (is_numeric(strval($captaNormalPro))) ? strval($captaNormalPro)  : -1;

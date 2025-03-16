@@ -3,20 +3,20 @@
         "hoja": "PVP Subv - Optima Pyme 36",
         "columnas": [
             {
-                "marca": "2",
-                "modelo": "3",
-                "precio_cesion": "4",
-                "gama": "6",
-                "captaEntradaPro": "9",
-                "captaNormalPro": "10",
-                "captaValorPro": "11",
-                "captaPremiumPro": "12",
-                "captaTopPro": "13",
-                "portaEntradaPro": "15",
-                "portaNormalPro": "16",
-                "portaValorPro": "17",
-                "portaPremiumPro": "18",
-                "portaTopPro": "19"
+                "marca": "B",
+                "modelo": "C",
+                "precio_cesion": "D",
+                "gama": "F",
+                "captaEntradaPro": "I",
+                "captaNormalPro": "J",
+                "captaValorPro": "K",
+                "captaPremiumPro": "L",
+                "captaTopPro": "M",
+                "portaEntradaPro": "O",
+                "portaNormalPro": "P",
+                "portaValorPro": "Q",
+                "portaPremiumPro": "R",
+                "portaTopPro": "S"
             }
         ]
     }

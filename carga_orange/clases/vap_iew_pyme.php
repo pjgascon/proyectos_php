@@ -6,7 +6,8 @@ use PhpOffice\PhpSpreadsheet\IOFactory;
 class vapIewPyme
 {
     public function cargarVapIewPyme($version): bool
-    {$retorno = false;
+    {
+        $retorno = false;
 
         echo "Comienza la carga\n";
         echo "Catálogo de terminales VAP IEW Pyme\n";
@@ -43,7 +44,7 @@ class vapIewPyme
             $nFilas = $hojaActiva->getHighestRow();
 
             for ($i = 0; $i < $nFilas; $i++) {
-                $valor = $hojaActiva->getCellByColumnAndRow($columnaMarca, $i);
+                $valor = $hojaActiva->getCell($columnaMarca . $i);
                 if (strtoupper($valor) == "MARCA") {
                     $filaInicio = $i + 1;
                     break;
@@ -51,21 +52,21 @@ class vapIewPyme
             }
 
             for ($i = $filaInicio; $i < $nFilas; $i++) {
-                $marca = Utilidades::codificarUTF(addslashes($hojaActiva->getCellByColumnAndRow($columnaMarca, $i)));
-                $modelo = Utilidades::codificarUTF(addslashes($hojaActiva->getCellByColumnAndRow($columnaModelo, $i)));
-                $precioCesion = $hojaActiva->getCellByColumnAndRow($columnaPrecioCesion, $i);
-                $gama = Utilidades::codificarUTF(addslashes($hojaActiva->getCellByColumnAndRow($columnaGama, $i)));
-                $meses = $hojaActiva->getCellByColumnAndRow($columnaMeses, $i);
-                $dxcPvpCapta = $hojaActiva->getCellByColumnAndRow($columnaDxcPvpCapta, $i);
-                $dxcVapCapta = $hojaActiva->getCellByColumnAndRow($columnaDxcVapCapta, $i);
-                $dxcPvpEpPorta = $hojaActiva->getCellByColumnAndRow($columnaDxcPvpEpPorta, $i);
-                $dxcVapEpPorta = $hojaActiva->getCellByColumnAndRow($columnaDxcVapEpPorta, $i);
-                $dxcPvpNpPorta = $hojaActiva->getCellByColumnAndRow($columnaDxcPvpNpPorta, $i);
-                $dxcVapNpPorta = $hojaActiva->getCellByColumnAndRow($columnaDxcVapNpPorta, $i);
-                $dxcPvpVpPorta = $hojaActiva->getCellByColumnAndRow($columnaDxcPvpVpPorta, $i);
-                $dxcVapVpPorta = $hojaActiva->getCellByColumnAndRow($columnaDxcVapVpPorta, $i);
-                $dxcPvpPpPorta = $hojaActiva->getCellByColumnAndRow($columnaDxcPvpPpPorta, $i);
-                $dxcVapPpPorta = $hojaActiva->getCellByColumnAndRow($columnaDxcVapPpPorta, $i);
+                $marca = Utilidades::codificarUTF(addslashes($hojaActiva->getCell($columnaMarca . $i)));
+                $modelo = Utilidades::codificarUTF(addslashes($hojaActiva->getCell($columnaModelo . $i)));
+                $precioCesion = Utilidades::codificarUTF(addslashes($hojaActiva->getCell($columnaPrecioCesion . $i)));
+                $gama = Utilidades::codificarUTF(addslashes($hojaActiva->getCell($columnaGama . $i)));
+                $meses = Utilidades::codificarUTF(addslashes($hojaActiva->getCell($columnaMeses . $i)));
+                $dxcPvpCapta = Utilidades::codificarUTF(addslashes($hojaActiva->getCell($columnaDxcPvpCapta . $i)));
+                $dxcVapCapta = Utilidades::codificarUTF(addslashes($hojaActiva->getCell($columnaDxcVapCapta . $i)));
+                $dxcPvpEpPorta = Utilidades::codificarUTF(addslashes($hojaActiva->getCell($columnaDxcPvpEpPorta . $i)));
+                $dxcVapEpPorta = Utilidades::codificarUTF(addslashes($hojaActiva->getCell($columnaDxcVapEpPorta . $i)));
+                $dxcPvpNpPorta = Utilidades::codificarUTF(addslashes($hojaActiva->getCell($columnaDxcPvpNpPorta . $i)));
+                $dxcVapNpPorta = Utilidades::codificarUTF(addslashes($hojaActiva->getCell($columnaDxcVapNpPorta . $i)));
+                $dxcPvpVpPorta = Utilidades::codificarUTF(addslashes($hojaActiva->getCell($columnaDxcPvpVpPorta . $i)));
+                $dxcVapVpPorta = Utilidades::codificarUTF(addslashes($hojaActiva->getCell($columnaDxcVapVpPorta . $i)));
+                $dxcPvpPpPorta = Utilidades::codificarUTF(addslashes($hojaActiva->getCell($columnaDxcPvpPpPorta . $i)));
+                $dxcVapPpPorta = Utilidades::codificarUTF(addslashes($hojaActiva->getCell($columnaDxcVapPpPorta . $i)));
 
                 if (!is_numeric($meses)) $meses = -1;
 

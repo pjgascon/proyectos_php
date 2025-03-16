@@ -1,22 +1,23 @@
 {
     "campos": {
         "hoja": "PVP Subv - Optima Pyme",
+        "fila_inicio":26,
         "columnas": [
             {
-                "marca": "2",
-                "modelo": "3",
-                "precio_cesion": "4",
-                "gama": "6",
-                "dxcpvp_capta_ep": "9",
-                "dxcvap_capta_en": "10",
-                "dxcpvp_capta_vp": "11",
-                "dxcvap_capta_pp": "12",
-                "dxcpvp_capta_tp": "13",
-                "dxcpvp_porta_ep": "15",
-                "dxcvap_porta_en": "16",
-                "dxcpvp_porta_vp": "17",
-                "dxcvap_porta_pp": "18",
-                "dxcpvp_porta_tp": "19"
+                "marca": "B",
+                "modelo": "C",
+                "precio_cesion": "D",
+                "gama": "F",
+                "dxcpvp_capta_ep": "I",
+                "dxcvap_capta_en": "J",
+                "dxcpvp_capta_vp": "K",
+                "dxcvap_capta_pp": "L",
+                "dxcpvp_capta_tp": "M",
+                "dxcpvp_porta_ep": "O",
+                "dxcvap_porta_en": "P",
+                "dxcpvp_porta_vp": "Q",
+                "dxcvap_porta_pp": "R",
+                "dxcpvp_porta_tp": "S"
             }
         ]
     }

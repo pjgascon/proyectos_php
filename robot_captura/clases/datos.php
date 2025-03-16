@@ -14,7 +14,7 @@ class DatosCaptura
             exit;
         }
 
-        $r = $con->query("call captura.peticiones_pool_seleccionar();");
+        $r = $con->query("call captura.peticiones_pool_seleccionar_descendente();");
         $peticiones = ($r->num_rows > 0) ? $r->fetch_all(MYSQLI_ASSOC) : null;
 
         if (!is_null($peticiones)) {
