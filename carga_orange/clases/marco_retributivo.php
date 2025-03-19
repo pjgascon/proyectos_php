@@ -5,7 +5,7 @@ use PhpOffice\PhpSpreadsheet\IOFactory;
 
 class marcoRetributivo
 {
-    public function cargarMarco()
+    public function cargarMarco($version)
     {
         echo "Comienza la carga\n";
         echo "Marco retributivo\n";
@@ -14,8 +14,11 @@ class marcoRetributivo
         $c->conectar();
 
         // Obtengo la última versión
-        $r = $c->query("call or_obtener_version_marco_retributivo();");
-        $version = ($r->num_rows > 0) ? $r->fetch_all(MYSQLI_ASSOC)[0]["retorno"] : null;
+        // $r = $c->query("call or_obtener_version_marco_retributivo();");
+        // $version = ($r->num_rows > 0) ? $r->fetch_all(MYSQLI_ASSOC)[0]["retorno"] : null;
+
+        if (!is_null($version))
+            $version++;
 
         if (!is_null($version)) {
             $plantilla = json_decode(file_get_contents(getcwd() . "/plantillas/marco_retributivo.json"));

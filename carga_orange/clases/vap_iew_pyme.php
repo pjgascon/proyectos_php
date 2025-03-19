@@ -57,8 +57,8 @@ class vapIewPyme
                 $precioCesion = Utilidades::codificarUTF(addslashes($hojaActiva->getCell($columnaPrecioCesion . $i)));
                 $gama = Utilidades::codificarUTF(addslashes($hojaActiva->getCell($columnaGama . $i)));
                 $meses = Utilidades::codificarUTF(addslashes($hojaActiva->getCell($columnaMeses . $i)));
-                $dxcPvpCapta = Utilidades::codificarUTF(addslashes($hojaActiva->getCell($columnaDxcPvpCapta . $i)));
-                $dxcVapCapta = Utilidades::codificarUTF(addslashes($hojaActiva->getCell($columnaDxcVapCapta . $i)));
+                $dxcPvpCapta = 0; //Utilidades::codificarUTF(addslashes($hojaActiva->getCell($columnaDxcPvpCapta . $i)));
+                $dxcVapCapta = 0; //Utilidades::codificarUTF(addslashes($hojaActiva->getCell($columnaDxcVapCapta . $i)));
                 $dxcPvpEpPorta = Utilidades::codificarUTF(addslashes($hojaActiva->getCell($columnaDxcPvpEpPorta . $i)));
                 $dxcVapEpPorta = Utilidades::codificarUTF(addslashes($hojaActiva->getCell($columnaDxcVapEpPorta . $i)));
                 $dxcPvpNpPorta = Utilidades::codificarUTF(addslashes($hojaActiva->getCell($columnaDxcPvpNpPorta . $i)));

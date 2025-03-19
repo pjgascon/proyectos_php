@@ -26,7 +26,7 @@ function obtenerDatos()
                     $retorno = ($r->num_rows > 0) ? $r->fetch_all(MYSQLI_ASSOC)[0]["retorno"] : 0;
                     if ($retorno == 1) {
                         echo "Guardado cif {$cif} - {$nombre}" . PHP_EOL;
-                        sleep(mt_rand(3, 10));
+                        sleep(mt_rand(3, 20));
                         obtenerDatos();
                     } else {
                         echo "Error al guardar el cif: {$cif}" . PHP_EOL;

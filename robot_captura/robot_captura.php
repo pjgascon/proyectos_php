@@ -29,11 +29,13 @@ if (!array_key_exists("error", $dat)) {
             $peticion->guardarPeticion($id, $usuario, $cif, $resultados);
         } else {
             // Se han producido errores
-            if ($captura->getError()[0] == "No se han encontrado resultados")
+            if ($captura->getError()[0] == "No se han encontrado resultados"){
                 $peticion->guardarPeticion($id, $usuario, $cif, "No se han encontrado resultados");
-
-            if ($captura->getError()[0] == "Timeout")
+            }elseif($captura->getError()[0] == "Timeout"){
                 $peticion->guardarPeticion($id, $usuario, $cif, "No se han encontrado resultados");
+            }else{
+                exit;
+            }
         }
     } else {
         if (count($captura->getError()) == 0) {
@@ -45,6 +47,8 @@ if (!array_key_exists("error", $dat)) {
             // Se han producido errores
             if ($captura->getError()['error'] == "No se han encontrado resultados" || $captura->getError()['error'] == "Timeout") {
                 $peticion->actualizarEstadoPeticion($id);
+            }else{
+                exit;
             }
             echo $captura->getError()['error'] . PHP_EOL;
         }

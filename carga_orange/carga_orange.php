@@ -42,11 +42,11 @@ if (!is_null($version)) {
     // $vapIewPyme = new optimaPyme();
     // $b = $vapIewPyme->cargarOptimaPyme($version);
 
-   $cargaOptima36 = new terminalesOptima36Pyme();
-    $b = $cargaOptima36->cargarTerminalesOptima36Pyme($version);
+//    $cargaOptima36 = new terminalesOptima36Pyme();
+//     $b = $cargaOptima36->cargarTerminalesOptima36Pyme($version);
 
-//     $cargaOptimaAAPP = new terminalesOptimaAAPPPyme();
-//     $b = $cargaOptimaAAPP->cargarTerminalesOptimaAAPPPyme($version);
+    // $cargaOptimaAAPP = new terminalesOptimaAAPPPyme();
+    // $b = $cargaOptimaAAPP->cargarTerminalesOptimaAAPPPyme($version);
 
 //     $cargaSP = new terminalesSolucionPersonalizadayme();
 //     $b = $cargaSP->cargarTerminaleSpPyme($version);
@@ -54,12 +54,12 @@ if (!is_null($version)) {
 //     $cargaSPAAPP = new terminalesSolucionPersonalizadaAAPPPyme();
 //     $b = $cargaSPAAPP->cargarTerminalesSPAAPPPyme($version);
 
-//     $cargaIew = new terminalesIEWPyme();
-//     $b = $cargaIew->cargarTerminalesIEWPyme($version);
+    // $cargaIew = new terminalesIEWPyme();
+    // $b = $cargaIew->cargarTerminalesIEWPyme($version);
 
 //     $cargaIEWAAPP = new terminalesIEWAAPPPyme();
 //     $b = $cargaIEWAAPP->cargarTerminalesIEWAAPPPyme($version);
 
-//     $cargarMarco = new marcoRetributivo();
-//     $cargarMarco->cargarMarco();
+    $cargarMarco = new marcoRetributivo();
+    $cargarMarco->cargarMarco($vesion);
 }

@@ -15,8 +15,8 @@ class terminalesOptimaAAPPPyme
         $c = new Conexion();
         $c->conectar();
 
-        $r = $c->query("select max(version) as version from orange.or_terminales_iew_pyme");
-        $version = ($r->num_rows > 0) ? $r->fetch_all(MYSQLI_ASSOC)[0]['version'] : null;
+        // $r = $c->query("select max(version) as version from orange.or_terminales_iew_pyme");
+        // $version = ($r->num_rows > 0) ? $r->fetch_all(MYSQLI_ASSOC)[0]['version'] : null;
 
         if (!is_null($version))
             $version++;
