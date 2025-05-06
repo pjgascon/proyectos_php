@@ -8,20 +8,51 @@ require_once(getcwd() . "/clases/datos.php");
 
 // $tiempoDeEspera = mt_rand(1, 3);
 // sleep($tiempoDeEspera * 60);
+if (file_exists(getcwd() . "/stop.flag")) {
+    echo "Ejecución detenida por bandera." . PHP_EOL;
+    exit;
+}
 
+if (file_exists("r")) {
+    echo "Reinicio del servidor." . PHP_EOL;
+    system("reiniciarCaptura");
+    sleep(15);
+    system("php " . __FILE__);
+    exit;
+}
+
+echo "Iniciando peticion" . PHP_EOL;
 $peticion = new DatosCaptura();
 $r = $peticion->obtenerPeticion();
 
 $dat = json_decode($r, true);
 
 if (!array_key_exists("error", $dat)) {
+    echo "Datos para la petición obtenidos correctamente" . PHP_EOL;
+
     $captura = new Captura();
     $cif = $dat["resultado"]["cif"];
     $usuario = $dat["resultado"]["usuario"];
     $id = $dat["resultado"]["id"];
     $tipoPeticion = $dat["resultado"]["origenManual"];
 
-    $resultados = $captura->peticionIndividual($cif, $tipoPeticion);
+    // $resultados = $captura->peticionIndividual($cif, $tipoPeticion);
+    $resultados = $captura->peticionNoServer($cif);
+    if (count($captura->getError()) > 0) {
+        echo "Error en la petición: " . $captura->getError()["error"] . PHP_EOL;
+
+        if ($captura->getError()["error"] == "Timeout" || $captura->getError()["error"] == "No se han encontrado resultados") {
+            $peticion->guardarPeticion($id, $usuario, $cif, "No se han encontrado resultados (Timeout)");
+            $peticion->actualizarEstadoPeticion($id);
+        }
+
+        sleep(5);
+        system("clear");
+        system("php " . __FILE__);
+        exit;
+    }
+
+    echo "Petición realizada correctamente" . PHP_EOL;
 
     if ($tipoPeticion) {
         if (count($captura->getError()) == 0) {
@@ -29,11 +60,11 @@ if (!array_key_exists("error", $dat)) {
             $peticion->guardarPeticion($id, $usuario, $cif, $resultados);
         } else {
             // Se han producido errores
-            if ($captura->getError()[0] == "No se han encontrado resultados"){
+            if ($captura->getError()[0] == "No se han encontrado resultados") {
                 $peticion->guardarPeticion($id, $usuario, $cif, "No se han encontrado resultados");
-            }elseif($captura->getError()[0] == "Timeout"){
+            } elseif ($captura->getError()[0] == "Timeout") {
                 $peticion->guardarPeticion($id, $usuario, $cif, "No se han encontrado resultados");
-            }else{
+            } else {
                 exit;
             }
         }
@@ -42,16 +73,27 @@ if (!array_key_exists("error", $dat)) {
             if ($peticion->guardarPeticionAutomatica(json_encode($captura->getPeticionAutomatica()))) {
                 $peticion->actualizarEstadoPeticion($id);
                 $peticion->guardarPeticion($id, -1, $cif, json_encode($captura->getPeticionAutomatica()));
+                echo "Petición guardada correctamente" . PHP_EOL;
             }
         } else {
             // Se han producido errores
-            if ($captura->getError()['error'] == "No se han encontrado resultados" || $captura->getError()['error'] == "Timeout") {
+            if ($captura->getError()['error'] == "No se han encontrado resultados") {
                 $peticion->actualizarEstadoPeticion($id);
-            }else{
-                exit;
+            } elseif ($captura->getError()['error'] == "Timeout") {
+                $peticion->actualizarEstadoPeticion($id);
+                // exec("reiniciarCaptura");
+                sleep(10);
+            } else {
+                //exec("reiniciarCaptura");
+                sleep(15);
             }
             echo $captura->getError()['error'] . PHP_EOL;
         }
+
+        sleep(15);
+        system("clear");
+        system("php " . __FILE__);
+        exit;
     }
     echo "FIN" . PHP_EOL;
 } else {

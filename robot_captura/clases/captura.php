@@ -37,7 +37,7 @@ class Captura
 
         if (!is_null($auth)) {
             $arr["auth"] = $auth[0]["clave"];
-            $arr["url"] = $auth[0]["url"];
+            $arr["url"] = "http://localhost:3001/query"; //$auth[0]["url"];
         }
         return $arr;
     }
@@ -62,7 +62,7 @@ class Captura
         $noCache = true;
         $soloCache = false;
         $reconectar = false;
-        $fuentes = "agora";
+        $fuentes = "";
 
         $data = [
             "cifs" => $cifs,
@@ -86,6 +86,7 @@ class Captura
         $response = curl_exec($ch);
 
         if (curl_errno($ch)) {
+            $this->setError("error", "Error al realizar la petición a la API");
             $error["error"] = "Error al realizar la petición a la API";
             return "";
             exit;
@@ -100,6 +101,22 @@ class Captura
                 return "";
             }
         }
+    }
+
+    public function peticionNoServer($document): string
+    {
+        $r = "";
+        $archivo = "";
+
+        exec("FLEX_CONFIG='/opt/capturagora/config_secreto.json' node /opt/capturagora/src/main.js --cifs='{$document}'", $r);
+        
+        for($i=0;$i <count($r);$i++){
+            if (strpos($r[$i], "resultados") !== false) {
+                $archivo = $r[$i+1];
+                break;                
+            }
+        }
+        return $archivo;
     }
 
     private function procesarJSON($json): string
@@ -232,6 +249,7 @@ class Captura
 
         $cif = array_key_first($arrJson['resultados']);
         $fechaConsultaAux = $arrJson['resultados'][$cif]['timeStamp'];
+        $fuente = $arrJson['resultados'][$cif]['fuente'];
         $arrResumen =  $arrJson['resultados'][$cif]['permanencias_resumen'];
 
         // Creo el array para ordenarlo por fecha
@@ -249,6 +267,25 @@ class Captura
         $totalLineasSinPermanencia = $arrJson['resultados'][$cif]['lineas']['numero_sin_permanencia'];
         $totalLineasConPermanencia = $arrJson['resultados'][$cif]['lineas']['numero_con_permanencia'];
 
+        if (strtoupper($fuente) == "AGORA") {
+            // Obtengo las tarifas
+            $tarifas = [];
+            $arrTarifas = $arrJson['resultados'][$cif]['tarifas'];
+            for ($t = 0; $t < count($arrTarifas); $t++) {
+                $telefono = $arrTarifas[$t]['telefono'];
+                $tarifa = $arrTarifas[$t]['tarifaNombre'];
+                array_push($tarifas, array("telefono" => $telefono, "tarifa" => $tarifa));
+            }
+        } elseif (strtoupper($fuente) == "PANGEA") {
+            $tarifas = [];
+            $arrTarifas = $arrJson['resultados'][$cif]['permanencias'];
+            for ($t = 0; $t < count($arrTarifas); $t++) {
+                $telefono = $arrTarifas[$t]['telefono'];
+                $tarifa = $arrJson['resultados'][$cif]['tarifa']["Tarifa"] ?? "";
+                array_push($tarifas, array("telefono" => $telefono, "tarifa" => $tarifa));
+            }
+        }
+
         $arrRetorno = [];
 
         $arrRetorno["fecha"] = $fechaConsultaAux;
@@ -258,6 +295,7 @@ class Captura
         $arrRetorno["totalLSP"] = $totalLineasSinPermanencia;
         $arrRetorno["totalLCP"] = $totalLineasConPermanencia;
         $arrRetorno["lineas"] = $arrFechas;
+        $arrRetorno["tarifas"] = $tarifas ?? null;
 
         return $arrRetorno;
     }

@@ -48,15 +48,15 @@ class marcoRetributivo
                     $vModulo = $hojaActiva->getCell($modulo. $i);
 
                     if (strlen(strval($vModulo)) > 0) {
-                        $vPaquete_voz_datos_20 = $hojaActiva->getCell($paquete_voz_datos_20. $i);
-                        $vPaquete_voz_datos_40 = $hojaActiva->getCell($paquete_voz_datos_40. $i);
-                        $vPaquete_voz_datos_mas_40 = $hojaActiva->getCell($paquete_voz_datos_mas_40. $i);
-                        $vCaptacion = $hojaActiva->getCell($captacion. $i);
-                        $vPortabilidad = $hojaActiva->getCell($portabilidad. $i);
-                        $vExtracomision_terminal = $hojaActiva->getCell($extracomision_terminal. $i);
-                        $vPuntos = $hojaActiva->getCell($puntos. $i);
-                        $vExtracomision_estrategica = $hojaActiva->getCell($extracomision_estrategica. $i);
-                        $vExtracomision_terminal_36 = $hojaActiva->getCell($extracomision_terminal_36. $i);
+                        $vPaquete_voz_datos_20 = $hojaActiva->getCellByColumnAndRow($paquete_voz_datos_20, $i);
+                        $vPaquete_voz_datos_40 = $hojaActiva->getCellByColumnAndRow($paquete_voz_datos_40, $i);
+                        $vPaquete_voz_datos_mas_40 = $hojaActiva->getCellByColumnAndRow($paquete_voz_datos_mas_40, $i);
+                        $vCaptacion = $hojaActiva->getCellByColumnAndRow($captacion, $i);
+                        $vPortabilidad = $hojaActiva->getCellByColumnAndRow($portabilidad, $i);
+                        $vExtracomision_terminal = $hojaActiva->getCellByColumnAndRow($extracomision_terminal, $i);
+                        $vPuntos = $hojaActiva->getCellByColumnAndRow($puntos, $i);
+                        $vExtracomision_estrategica = $hojaActiva->getCellByColumnAndRow($extracomision_estrategica, $i);
+                        $vExtracomision_terminal_36 = $hojaActiva->getCellByColumnAndRow($extracomision_terminal_36, $i);
 
                         $vPaquete_voz_datos_20 = (!is_numeric(strval($vPaquete_voz_datos_20))) ? 0 : strval($vPaquete_voz_datos_20);
                         $vPaquete_voz_datos_40 = (!is_numeric(strval($vPaquete_voz_datos_40))) ? 0 : strval($vPaquete_voz_datos_40);

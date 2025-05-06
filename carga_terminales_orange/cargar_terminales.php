@@ -15,9 +15,9 @@ require_once(getcwd() . "/clases/util.php");
 $c = new Conexion();
 $c->conectar();
 
-$version = 0;
-$versionAtulado = 0;
-$archivo = "terminales.xlsm";
+$version = 4;
+$versionAtulado = 4;
+$archivo = "Captacion_Autonomo_MicroPyme_Marzo_2025.xlsx";
 
 if (!file_exists($archivo)) {
     echo "ERROR: Archivo de carga no encontrado";
@@ -142,58 +142,13 @@ foreach ($objWorksheet->getRowIterator() as $row) {
         "categoria" => "ENTRADA PRO"
     ]);
 
-    // array_push($datos, [
-    //     "marca" => $marca,
-    //     "modelo" => $modelo,
-    //     "precio_cesion" => $precioCesion,
-    //     "pago_unico" => $pagoUnico,
-    //     "gama" => $gama,
-    //     "pago_inicial" => $pagoUnicoNP,
-    //     "pago_mensual" => $cuotaMesNP,
-    //     "dxcPrecioSoloMovil" => $dxcPrecioSoloMovilNP,
-    //     "dxcVAPSolomovil" => $dxcVAPSoloMovilNP,
-    //     "dxcPrecioConvergencia" => $dxcPrecioConvergenciaNP,
-    //     "dxcVAPConvergencia" => $dxcVAPConvergenciaNP,
-    //     "categoria" => "NORMAL PRO"
-    // ]);
-
-    // array_push($datos, [
-    //     "marca" => $marca,
-    //     "modelo" => $modelo,
-    //     "precio_cesion" => $precioCesion,
-    //     "pago_unico" => $pagoUnico,
-    //     "gama" => $gama,
-    //     "pago_inicial" => $pagoUnicoVP,
-    //     "pago_mensual" => $cuotaMesVP,
-    //     "dxcPrecioSoloMovil" => $dxcPrecioSoloMovilVP,
-    //     "dxcVAPSolomovil" => $dxcVAPSoloMovilVP,
-    //     "dxcPrecioConvergencia" => $dxcPrecioConvergenciaVP,
-    //     "dxcVAPConvergencia" => $dxcVAPConvergenciaVP,
-    //     "categoria" => "VALOR PRO"
-    // ]);
-
-    // array_push($datos, [
-    //     "marca" => $marca,
-    //     "modelo" => $modelo,
-    //     "precio_cesion" => $precioCesion,
-    //     "pago_unico" => $pagoUnico,
-    //     "gama" => $gama,
-    //     "pago_inicial" => $pagoUnicoPP,
-    //     "pago_mensual" => $cuotaMesPP,
-    //     "dxcPrecioSoloMovil" => $dxcPrecioSoloMovilPP,
-    //     "dxcVAPSolomovil" => $dxcVAPSoloMovilPP,
-    //     "dxcPrecioConvergencia" => $dxcPrecioConvergenciaPP,
-    //     "dxcVAPConvergencia" => $dxcVAPConvergenciaPP,
-    //     "categoria" => "PREMIUM PRO"
-    // ]);
-
     $contador++;
 }
 
 // echo "call orange.or_terminales_love_guardar('" . json_encode($datos) . "');";exit;
 $contenido = "Este es el contenido del archivo.\n";
 file_put_contents("archivo.txt", "call orange.or_terminales_love_guardar('" . json_encode($datos) . "');");
-
+$q = "call orange.or_terminales_love_guardar('" . json_encode($datos) . "');";
 $r = $c->query("call orange.or_terminales_love_guardar('" . json_encode($datos) . "');");
 $retorno = ($r->num_rows > 0) ? $r->fetch_all(MYSQLI_ASSOC)[0]["retorno"] : "0";
 echo ($retorno == 1) ? "Carga correcta\n" : "Error en la carga\n";

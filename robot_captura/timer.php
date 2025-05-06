@@ -18,4 +18,4 @@ function timer($intervalo, $contadorReinicio): void
         timer($intervalo, 0);
 }
 
-timer(60, 0);
+timer(15, 0);

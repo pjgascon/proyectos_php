@@ -22,11 +22,12 @@ require_once(getcwd() . '/clases/iew_pyme.php');
 require_once(getcwd() . '/clases/iew_appp_pyme.php');
 require_once(getcwd() . '/clases/marco_retributivo.php');
 
-$c = new Conexion();
-$c->conectar();
+// $c = new Conexion();
+// $c->conectar();
 
-$r = $c->query("call or_obtener_version();");
-$version = ($r->num_rows > 0) ? $r->fetch_all(MYSQLI_ASSOC)[0]["retorno"] : null;
+// $r = $c->query("call or_obtener_version();");
+// $version = ($r->num_rows > 0) ? $r->fetch_all(MYSQLI_ASSOC)[0]["retorno"] : null;
+$version = 4;
 
 if (!is_null($version)) {
     // Carga de terminales venta a plazos pyme
@@ -61,5 +62,6 @@ if (!is_null($version)) {
 //     $b = $cargaIEWAAPP->cargarTerminalesIEWAAPPPyme($version);
 
     $cargarMarco = new marcoRetributivo();
-    $cargarMarco->cargarMarco($vesion);
+    $cargarMarco->cargarMarco($version);
+    echo "Finalizado\n";
 }

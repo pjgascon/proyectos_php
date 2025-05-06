@@ -1,0 +1,450 @@
+{
+  "timeStamp": "2025-04-02T17:50:38.157Z",
+  "cif": "E47515713",
+  "fuente": "agora",
+  "cliente": {
+    "Nombre Cliente:": "HERMANOS GOMEZ CEREZAL CB",
+    "NIF/CIF Cliente:": "E47515713",
+    "Puntos cliente BUSINESS:": "10987",
+    "Código de Cuenta:": "1.58465819"
+  },
+  "permanencias": [
+    {
+      "telefono": "616362153",
+      "compromisos": [
+        {
+          "Fecha Inicio:": "21/07/2023",
+          "Duración restante:": "4 meses",
+          "Fecha Fin:": "21/07/2025",
+          "Pen. incumplimiento:": "70 €",
+          "Tipo:": "Tarifa",
+          "Modalidad:": "Estándar",
+          "Motivo Alta:": ""
+        },
+        {
+          "Fecha Inicio:": "28/07/2023",
+          "Duración restante:": "4 meses",
+          "Fecha Fin:": "28/07/2025",
+          "Pen. incumplimiento:": "160 €",
+          "Tipo:": "Datos",
+          "Modalidad:": "Estándar",
+          "Motivo Alta:": ""
+        }
+      ]
+    },
+    {
+      "telefono": "627433052",
+      "compromisos": [
+        {
+          "Fecha Inicio:": "21/07/2023",
+          "Duración restante:": "4 meses",
+          "Fecha Fin:": "21/07/2025",
+          "Pen. incumplimiento:": "70 €",
+          "Tipo:": "Tarifa",
+          "Modalidad:": "Estándar",
+          "Motivo Alta:": ""
+        },
+        {
+          "Fecha Inicio:": "28/07/2023",
+          "Duración restante:": "4 meses",
+          "Fecha Fin:": "28/07/2025",
+          "Pen. incumplimiento:": "160 €",
+          "Tipo:": "Datos",
+          "Modalidad:": "Estándar",
+          "Motivo Alta:": ""
+        }
+      ]
+    },
+    {
+      "telefono": "607633799",
+      "compromisos": [
+        {
+          "Fecha Inicio:": "21/07/2023",
+          "Duración restante:": "4 meses",
+          "Fecha Fin:": "21/07/2025",
+          "Pen. incumplimiento:": "70 €",
+          "Tipo:": "Tarifa",
+          "Modalidad:": "Estándar",
+          "Motivo Alta:": ""
+        },
+        {
+          "Fecha Inicio:": "28/07/2023",
+          "Duración restante:": "4 meses",
+          "Fecha Fin:": "28/07/2025",
+          "Pen. incumplimiento:": "160 €",
+          "Tipo:": "Datos",
+          "Modalidad:": "Estándar",
+          "Motivo Alta:": ""
+        }
+      ]
+    },
+    {
+      "telefono": "687476511",
+      "compromisos": [
+        {
+          "Fecha Inicio:": "26/10/2023",
+          "Duración restante:": "7 meses",
+          "Fecha Fin:": "26/10/2025",
+          "Pen. incumplimiento:": "90 €",
+          "Tipo:": "Tarifa",
+          "Modalidad:": "Estándar",
+          "Motivo Alta:": ""
+        }
+      ]
+    },
+    {
+      "telefono": "627433051",
+      "compromisos": [
+        {
+          "Fecha Inicio:": "21/07/2023",
+          "Duración restante:": "4 meses",
+          "Fecha Fin:": "21/07/2025",
+          "Pen. incumplimiento:": "70 €",
+          "Tipo:": "Tarifa",
+          "Modalidad:": "Estándar",
+          "Motivo Alta:": ""
+        },
+        {
+          "Fecha Inicio:": "28/07/2023",
+          "Duración restante:": "4 meses",
+          "Fecha Fin:": "28/07/2025",
+          "Pen. incumplimiento:": "160 €",
+          "Tipo:": "Datos",
+          "Modalidad:": "Estándar",
+          "Motivo Alta:": ""
+        }
+      ]
+    },
+    {
+      "telefono": "607669289",
+      "compromisos": [
+        {
+          "Fecha Inicio:": "21/07/2023",
+          "Duración restante:": "4 meses",
+          "Fecha Fin:": "21/07/2025",
+          "Pen. incumplimiento:": "70 €",
+          "Tipo:": "Tarifa",
+          "Modalidad:": "Estándar",
+          "Motivo Alta:": ""
+        },
+        {
+          "Fecha Inicio:": "01/08/2023",
+          "Duración restante:": "4 meses",
+          "Fecha Fin:": "01/08/2025",
+          "Pen. incumplimiento:": "560 €",
+          "Tipo:": "Datos",
+          "Modalidad:": "Estándar",
+          "Motivo Alta:": "Móvil: Compra terminal/equipamiento"
+        }
+      ]
+    },
+    {
+      "telefono": "677437623",
+      "compromisos": [
+        {
+          "Fecha Inicio:": "21/07/2023",
+          "Duración restante:": "4 meses",
+          "Fecha Fin:": "21/07/2025",
+          "Pen. incumplimiento:": "70 €",
+          "Tipo:": "Tarifa",
+          "Modalidad:": "Estándar",
+          "Motivo Alta:": ""
+        },
+        {
+          "Fecha Inicio:": "28/07/2023",
+          "Duración restante:": "4 meses",
+          "Fecha Fin:": "28/07/2025",
+          "Pen. incumplimiento:": "160 €",
+          "Tipo:": "Datos",
+          "Modalidad:": "Estándar",
+          "Motivo Alta:": ""
+        }
+      ]
+    },
+    {
+      "telefono": "670681088",
+      "compromisos": [
+        {
+          "Fecha Inicio:": "21/07/2023",
+          "Duración restante:": "4 meses",
+          "Fecha Fin:": "21/07/2025",
+          "Pen. incumplimiento:": "70 €",
+          "Tipo:": "Tarifa",
+          "Modalidad:": "Estándar",
+          "Motivo Alta:": ""
+        },
+        {
+          "Fecha Inicio:": "28/07/2023",
+          "Duración restante:": "4 meses",
+          "Fecha Fin:": "28/07/2025",
+          "Pen. incumplimiento:": "160 €",
+          "Tipo:": "Datos",
+          "Modalidad:": "Estándar",
+          "Motivo Alta:": ""
+        }
+      ]
+    },
+    {
+      "telefono": "670685852",
+      "compromisos": [
+        {
+          "Fecha Inicio:": "21/07/2023",
+          "Duración restante:": "4 meses",
+          "Fecha Fin:": "21/07/2025",
+          "Pen. incumplimiento:": "70 €",
+          "Tipo:": "Tarifa",
+          "Modalidad:": "Estándar",
+          "Motivo Alta:": ""
+        },
+        {
+          "Fecha Inicio:": "28/07/2023",
+          "Duración restante:": "4 meses",
+          "Fecha Fin:": "28/07/2025",
+          "Pen. incumplimiento:": "160 €",
+          "Tipo:": "Datos",
+          "Modalidad:": "Estándar",
+          "Motivo Alta:": ""
+        }
+      ]
+    },
+    {
+      "telefono": "670385990",
+      "compromisos": [
+        {
+          "Fecha Inicio:": "21/07/2023",
+          "Duración restante:": "4 meses",
+          "Fecha Fin:": "21/07/2025",
+          "Pen. incumplimiento:": "70 €",
+          "Tipo:": "Tarifa",
+          "Modalidad:": "Estándar",
+          "Motivo Alta:": ""
+        }
+      ]
+    },
+    {
+      "telefono": "625636295",
+      "compromisos": [
+        {
+          "Fecha Inicio:": "21/07/2023",
+          "Duración restante:": "4 meses",
+          "Fecha Fin:": "21/07/2025",
+          "Pen. incumplimiento:": "70 €",
+          "Tipo:": "Tarifa",
+          "Modalidad:": "Estándar",
+          "Motivo Alta:": ""
+        },
+        {
+          "Fecha Inicio:": "28/07/2023",
+          "Duración restante:": "4 meses",
+          "Fecha Fin:": "28/07/2025",
+          "Pen. incumplimiento:": "160 €",
+          "Tipo:": "Datos",
+          "Modalidad:": "Estándar",
+          "Motivo Alta:": ""
+        }
+      ]
+    },
+    {
+      "telefono": "687515925",
+      "compromisos": [
+        {
+          "Fecha Inicio:": "21/07/2023",
+          "Duración restante:": "4 meses",
+          "Fecha Fin:": "21/07/2025",
+          "Pen. incumplimiento:": "70 €",
+          "Tipo:": "Tarifa",
+          "Modalidad:": "Estándar",
+          "Motivo Alta:": ""
+        },
+        {
+          "Fecha Inicio:": "28/07/2023",
+          "Duración restante:": "4 meses",
+          "Fecha Fin:": "28/07/2025",
+          "Pen. incumplimiento:": "160 €",
+          "Tipo:": "Datos",
+          "Modalidad:": "Estándar",
+          "Motivo Alta:": ""
+        }
+      ]
+    },
+    {
+      "telefono": "609587553",
+      "compromisos": [
+        {
+          "Fecha Inicio:": "21/07/2023",
+          "Duración restante:": "4 meses",
+          "Fecha Fin:": "21/07/2025",
+          "Pen. incumplimiento:": "70 €",
+          "Tipo:": "Tarifa",
+          "Modalidad:": "Estándar",
+          "Motivo Alta:": ""
+        },
+        {
+          "Fecha Inicio:": "28/07/2023",
+          "Duración restante:": "4 meses",
+          "Fecha Fin:": "28/07/2025",
+          "Pen. incumplimiento:": "160 €",
+          "Tipo:": "Datos",
+          "Modalidad:": "Estándar",
+          "Motivo Alta:": ""
+        }
+      ]
+    },
+    {
+      "telefono": "619773352",
+      "compromisos": [
+        {
+          "Fecha Inicio:": "21/07/2023",
+          "Duración restante:": "4 meses",
+          "Fecha Fin:": "21/07/2025",
+          "Pen. incumplimiento:": "70 €",
+          "Tipo:": "Tarifa",
+          "Modalidad:": "Estándar",
+          "Motivo Alta:": ""
+        },
+        {
+          "Fecha Inicio:": "14/02/2025",
+          "Duración restante:": "23 meses",
+          "Fecha Fin:": "14/02/2027",
+          "Pen. incumplimiento:": "300 €",
+          "Tipo:": "Datos",
+          "Modalidad:": "Estándar",
+          "Motivo Alta:": "Móvil: Compra terminal/equipamiento a plazos"
+        }
+      ]
+    }
+  ],
+  "tarifas": [
+    {
+      "telefono": "616362153",
+      "tarifaNombre": "Optima Plus Empresas"
+    },
+    {
+      "telefono": "627433052",
+      "tarifaNombre": "Optima Plus Empresas"
+    },
+    {
+      "telefono": "607633799",
+      "tarifaNombre": "Optima Plus Empresas"
+    },
+    {
+      "telefono": "687476511",
+      "tarifaNombre": "Optima Plus Empresas"
+    },
+    {
+      "telefono": "627433051",
+      "tarifaNombre": "Optima Plus Empresas"
+    },
+    {
+      "telefono": "607669289",
+      "tarifaNombre": "Optima Plus Empresas"
+    },
+    {
+      "telefono": "677437623",
+      "tarifaNombre": "Optima Plus Empresas"
+    },
+    {
+      "telefono": "670681088",
+      "tarifaNombre": "Optima Plus Empresas"
+    },
+    {
+      "telefono": "670685852",
+      "tarifaNombre": "Optima Plus Empresas"
+    },
+    {
+      "telefono": "670385990",
+      "tarifaNombre": "Optima Plus Empresas"
+    },
+    {
+      "telefono": "625636295",
+      "tarifaNombre": "Optima Plus Empresas"
+    },
+    {
+      "telefono": "687515925",
+      "tarifaNombre": "Optima Plus Empresas"
+    },
+    {
+      "telefono": "609587553",
+      "tarifaNombre": "Optima Plus Empresas"
+    },
+    {
+      "telefono": "619773352",
+      "tarifaNombre": "Optima Plus Empresas"
+    }
+  ],
+  "permanencias_resumen": {
+    "2025-07-21": {
+      "importe": 910,
+      "telefonos": [
+        "616362153",
+        "627433052",
+        "607633799",
+        "627433051",
+        "607669289",
+        "677437623",
+        "670681088",
+        "670685852",
+        "670385990",
+        "625636295",
+        "687515925",
+        "609587553",
+        "619773352"
+      ]
+    },
+    "2025-07-28": {
+      "importe": 1600,
+      "telefonos": [
+        "616362153",
+        "627433052",
+        "607633799",
+        "627433051",
+        "677437623",
+        "670681088",
+        "670685852",
+        "625636295",
+        "687515925",
+        "609587553"
+      ]
+    },
+    "2025-10-26": {
+      "importe": 90,
+      "telefonos": [
+        "687476511"
+      ]
+    },
+    "2025-08-01": {
+      "importe": 560,
+      "telefonos": [
+        "607669289"
+      ]
+    },
+    "2027-02-14": {
+      "importe": 300,
+      "telefonos": [
+        "619773352"
+      ]
+    }
+  },
+  "lineas": {
+    "numero_total": 14,
+    "numero_con_permanencia": 14,
+    "numero_sin_permanencia": 0,
+    "con_permanencia": [
+      "616362153",
+      "627433052",
+      "607633799",
+      "687476511",
+      "627433051",
+      "607669289",
+      "677437623",
+      "670681088",
+      "670685852",
+      "670385990",
+      "625636295",
+      "687515925",
+      "609587553",
+      "619773352"
+    ],
+    "sin_permanencia": []
+  }
+}

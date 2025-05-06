@@ -1,0 +1,109 @@
+{
+  "timeStamp": "2025-04-02T17:46:46.159Z",
+  "cif": "E47516737",
+  "fuente": "agora",
+  "cliente": {
+    "Nombre Cliente:": "INICIATIVA DE GESTION, CB",
+    "NIF/CIF Cliente:": "E47516737",
+    "Puntos cliente BUSINESS:": "4247",
+    "Código de Cuenta:": "1.62215803"
+  },
+  "permanencias": [
+    {
+      "telefono": "628704763",
+      "compromisos": [
+        {
+          "Fecha Inicio:": "09/01/2024",
+          "Duración restante:": "9 meses",
+          "Fecha Fin:": "09/01/2026",
+          "Pen. incumplimiento:": "630 €",
+          "Tipo:": "Datos",
+          "Modalidad:": "Estándar",
+          "Motivo Alta:": "Móvil: Compra terminal/equipamiento"
+        }
+      ]
+    },
+    {
+      "telefono": "607516190",
+      "compromisos": [
+        {
+          "Fecha Inicio:": "09/01/2024",
+          "Duración restante:": "9 meses",
+          "Fecha Fin:": "09/01/2026",
+          "Pen. incumplimiento:": "270 €",
+          "Tipo:": "Datos",
+          "Modalidad:": "Estándar",
+          "Motivo Alta:": "Móvil: Compra terminal/equipamiento a plazos"
+        }
+      ]
+    },
+    {
+      "telefono": "692420441",
+      "compromisos": []
+    },
+    {
+      "telefono": "607256256",
+      "compromisos": [
+        {
+          "Fecha Inicio:": "09/01/2024",
+          "Duración restante:": "9 meses",
+          "Fecha Fin:": "09/01/2026",
+          "Pen. incumplimiento:": "270 €",
+          "Tipo:": "Datos",
+          "Modalidad:": "Estándar",
+          "Motivo Alta:": "Móvil: Compra terminal/equipamiento a plazos"
+        }
+      ]
+    },
+    {
+      "telefono": "657825033",
+      "compromisos": []
+    }
+  ],
+  "tarifas": [
+    {
+      "telefono": "628704763",
+      "tarifaNombre": "Optima Plus Empresas"
+    },
+    {
+      "telefono": "607516190",
+      "tarifaNombre": "Optima Plus Empresas"
+    },
+    {
+      "telefono": "692420441",
+      "tarifaNombre": "Optima Plus Empresas"
+    },
+    {
+      "telefono": "607256256",
+      "tarifaNombre": "Optima Plus Empresas"
+    },
+    {
+      "telefono": "657825033",
+      "tarifaNombre": "Optima Plus Empresas"
+    }
+  ],
+  "permanencias_resumen": {
+    "2026-01-09": {
+      "importe": 1170,
+      "telefonos": [
+        "628704763",
+        "607516190",
+        "607256256"
+      ]
+    }
+  },
+  "lineas": {
+    "numero_total": 5,
+    "numero_con_permanencia": 3,
+    "numero_sin_permanencia": 2,
+    "con_permanencia": [
+      "628704763",
+      "607516190",
+      "607256256"
+    ],
+    "sin_permanencia": [
+      "692420441",
+      "657825033"
+    ]
+  }
+}
