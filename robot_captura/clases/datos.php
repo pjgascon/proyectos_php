@@ -14,7 +14,7 @@ class DatosCaptura
             exit;
         }
 
-        $r = $con->query("call captura.peticiones_pool_seleccionar_descendente();");
+        $r = $con->query("call captura.peticiones_pool_seleccionar();");
         $peticiones = ($r->num_rows > 0) ? $r->fetch_all(MYSQLI_ASSOC) : null;
 
         if (!is_null($peticiones)) {
@@ -26,12 +26,17 @@ class DatosCaptura
             return json_encode(["resultado" => $peticion]);
             exit;
         } else {
+            // Envio el correo de aviso de finalización de datos disponibles
+            $con->next_result();
+            $fecha = date("Y-m-d H:i:s");
+            $query = "insert into mails.emails values(NULL,0,'{$fecha}',NULL,'notificaciones@liberi.es','pedrojose.gascon@waspapp.es','Finalización datos disponibles','Se han acabado los datos disponibles para procesar snoop','0');";
+            $con->query($query);
             return json_encode(["error" => "No hay peticiones disponibles"]);
             exit;
         }
     }
 
-    public function guardarPeticionAutomatica($datos): bool
+    public function guardarPeticionAutomatica($datos, $id): bool
     {
         $con = new Conexion();
         $con->conectar();
@@ -41,19 +46,39 @@ class DatosCaptura
             exit;
         }
 
-        $r = $con->query("call captura.permanencias_guardar('" . $datos . "');");
-        return ($r->num_rows > 0) ? (bool)$r->fetch_all(MYSQLI_ASSOC)[0]["retorno"] : false;
+        try {
+            $r = $con->query("call captura.permanencias_guardar('" . $datos . "');");
+            return ($r->num_rows > 0) ? (bool)$r->fetch_all(MYSQLI_ASSOC)[0]["retorno"] : false;
+        } catch (Exception $e) {
+            $con1 = new Conexion();
+            $con1->conectar();
+            $con1->query("update captura.peticiones_pool set estado = 1 where id = {$id};");
+            $con1->close();
+            return false;
+        }
     }
 
     public function guardarPeticion($id, $usuario_id, $cif, $resultado): bool
     {
-        $con = new Conexion();
-        $con->conectar();
-        $r = $con->query("call captura.peticiones_guardar({$usuario_id},'{$cif}','{$resultado}',{$id});");
-        return ($r->num_rows > 0) ? (bool) $r->fetch_all(MYSQLI_ASSOC)[0]["retorno"] : false;
+        try {
+            $con = new Conexion();
+            $con->conectar();
+            if (!$con->getExisteError()) {
+                $r = $con->query("call captura.peticiones_guardar({$usuario_id},'{$cif}','{$resultado}',{$id});");
+                return ($r->num_rows > 0) ? (bool) $r->fetch_all(MYSQLI_ASSOC)[0]["retorno"] : false;
+            } else {
+                return false;
+            }
+        } catch (Exception $e) {
+            $con1 = new Conexion();
+            $con1->conectar();
+            $con1->query("update captura.peticiones_pool set estado = 1 where id = {$id};");
+            $con1->close();
+            return false;
+        }
     }
 
-    public function actualizarEstadoPeticion($id): void
+    public function actualizarEstadoPeticion($id, $estado): void
     {
         $con = new Conexion();
         $con->conectar();
@@ -61,6 +86,6 @@ class DatosCaptura
         if ($con->getExisteError())
             exit;
 
-        $r = $con->query("call captura.peticiones_actualizar_estado({$id});");
+        $r = $con->query("call captura.peticiones_actualizar_estado({$id},{$estado});");
     }
 }

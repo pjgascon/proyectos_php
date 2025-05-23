@@ -37,7 +37,8 @@ class Captura
 
         if (!is_null($auth)) {
             $arr["auth"] = $auth[0]["clave"];
-            $arr["url"] = "http://localhost:3001/query"; //$auth[0]["url"];
+            // $arr["url"] = "http://localhost:3001/query"; //$auth[0]["url"];
+            $arr["url"] = "http://212.227.145.7:3001/query"; //$auth[0]["url"];
         }
         return $arr;
     }
@@ -62,7 +63,7 @@ class Captura
         $noCache = true;
         $soloCache = false;
         $reconectar = false;
-        $fuentes = "";
+        $fuentes = "agora,pangea";
 
         $data = [
             "cifs" => $cifs,
@@ -101,22 +102,6 @@ class Captura
                 return "";
             }
         }
-    }
-
-    public function peticionNoServer($document): string
-    {
-        $r = "";
-        $archivo = "";
-
-        exec("FLEX_CONFIG='/opt/capturagora/config_secreto.json' node /opt/capturagora/src/main.js --cifs='{$document}'", $r);
-        
-        for($i=0;$i <count($r);$i++){
-            if (strpos($r[$i], "resultados") !== false) {
-                $archivo = $r[$i+1];
-                break;                
-            }
-        }
-        return $archivo;
     }
 
     private function procesarJSON($json): string
@@ -252,16 +237,47 @@ class Captura
         $fuente = $arrJson['resultados'][$cif]['fuente'];
         $arrResumen =  $arrJson['resultados'][$cif]['permanencias_resumen'];
 
+        // $totalImporte = $arrResumen['suma'];
+
         // Creo el array para ordenarlo por fecha
-        $arrLineas = array_keys($arrResumen);
-        for ($i = 0; $i < count($arrLineas); $i++) {
-            if (Captura::esFecha($arrLineas[$i])) {
-                $arrFechas[$i]["fecha"] = $arrLineas[$i];
-                $arrFechas[$i]["nLineas"] = count($arrResumen[$arrLineas[$i]]['telefonos']);
-                $arrFechas[$i]["importe"] = $arrResumen[$arrLineas[$i]]['importe'];
-                $totalImporte +=  $arrResumen[$arrLineas[$i]]['importe'];
+        if (strtoupper($fuente) == "PANGEA") {
+            $arrLineas = array_keys($arrResumen["permanencias"]);
+            for ($i = 0; $i < count($arrLineas); $i++) {
+                if (Captura::esFecha($arrLineas[$i])) {
+                    $arrFechas[$i]["fecha"] = $arrLineas[$i];
+                    if (array_key_exists("telefonos", $arrResumen["permanencias"][$arrLineas[$i]])) {
+                        $arrFechas[$i]["nLineas"] = count($arrResumen["permanencias"][$arrLineas[$i]]['telefonos']);
+                    } else {
+                        $arrFechas[$i]["nLineas"] = 0;
+                    }
+                    if (!is_null($arrResumen["permanencias"][$arrLineas[$i]]['importe'])) {
+                        $arrFechas[$i]["importe"] = $arrResumen["permanencias"][$arrLineas[$i]]['importe'];
+                    } else {
+                        $arrFechas[$i]["importe"] = 0;
+                    }
+                    $totalImporte +=  $arrFechas[$i]["importe"];
+                }
+            }
+        } else {
+            $arrLineas = array_keys($arrResumen);
+            for ($i = 0; $i < count($arrLineas); $i++) {
+                if (Captura::esFecha($arrLineas[$i])) {
+                    $arrFechas[$i]["fecha"] = $arrLineas[$i];
+                    if (array_key_exists("telefonos", $arrResumen[$arrLineas[$i]])) {
+                        $arrFechas[$i]["nLineas"] = count($arrResumen[$arrLineas[$i]]['telefonos']);
+                    } else {
+                        $arrFechas[$i]["nLineas"] = 0;
+                    }
+                    if (!is_null($arrResumen[$arrLineas[$i]]['importe'])) {
+                        $arrFechas[$i]["importe"] = $arrResumen[$arrLineas[$i]]['importe'];
+                    } else {
+                        $arrFechas[$i]["importe"] = 0;
+                    }
+                    $totalImporte +=  $arrFechas[$i]["importe"];
+                }
             }
         }
+
 
         $totalLineas = $arrJson['resultados'][$cif]['lineas']['numero_total'];
         $totalLineasSinPermanencia = $arrJson['resultados'][$cif]['lineas']['numero_sin_permanencia'];
