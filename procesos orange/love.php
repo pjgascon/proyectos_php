@@ -11,7 +11,7 @@ use PhpOffice\PhpSpreadsheet\IOFactory;
 use PSpell\Config;
 
 // Indico la versión
-$version = 5;
+$version = 6;
 
 // Defino las columnas
 // $Pi = Pago inicial

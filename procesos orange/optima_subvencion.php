@@ -10,7 +10,7 @@ require_once(getcwd() . '/vendor/PhpSpreadsheet/autoload.php');
 use PhpOffice\PhpSpreadsheet\IOFactory;
 
 // Indico la versión
-$version = 5;
+$version = 6;
 
 // Defino las columnas
 $marca = 'A';

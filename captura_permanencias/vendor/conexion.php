@@ -16,8 +16,8 @@ class Conexion extends mysqli
 		parent::__construct("localhost",
 							"root",
 							"Coral18262202",
-							"orange",
-							3307);
+							"distribuidores",
+							3306);
 
 		if($this->connect_errno){
 			$this->exiteError = true;
@@ -28,4 +28,3 @@ class Conexion extends mysqli
 		}
 	}
 }
-

@@ -37,8 +37,8 @@ class Captura
 
         if (!is_null($auth)) {
             $arr["auth"] = $auth[0]["clave"];
-            // $arr["url"] = "http://localhost:3001/query"; //$auth[0]["url"];
-            $arr["url"] = "http://212.227.145.7:3001/query"; //$auth[0]["url"];
+            $arr["url"] = "http://localhost:3001/query"; //$auth[0]["url"];
+            // $arr["url"] = "http://212.227.145.7:3001/query"; //$auth[0]["url"];
         }
         return $arr;
     }
@@ -287,18 +287,22 @@ class Captura
             // Obtengo las tarifas
             $tarifas = [];
             $arrTarifas = $arrJson['resultados'][$cif]['tarifas'];
-            for ($t = 0; $t < count($arrTarifas); $t++) {
-                $telefono = $arrTarifas[$t]['telefono'];
-                $tarifa = $arrTarifas[$t]['tarifaNombre'];
-                array_push($tarifas, array("telefono" => $telefono, "tarifa" => $tarifa));
+            if (!is_null($arrTarifas)) {
+                for ($t = 0; $t < count($arrTarifas); $t++) {
+                    $telefono = $arrTarifas[$t]['telefono'];
+                    $tarifa = $arrTarifas[$t]['tarifaNombre'];
+                    array_push($tarifas, array("telefono" => $telefono, "tarifa" => $tarifa));
+                }
             }
         } elseif (strtoupper($fuente) == "PANGEA") {
             $tarifas = [];
             $arrTarifas = $arrJson['resultados'][$cif]['permanencias'];
-            for ($t = 0; $t < count($arrTarifas); $t++) {
-                $telefono = $arrTarifas[$t]['telefono'];
-                $tarifa = $arrJson['resultados'][$cif]['tarifa']["Tarifa"] ?? "";
-                array_push($tarifas, array("telefono" => $telefono, "tarifa" => $tarifa));
+            if (!is_null($arrTarifas)) {
+                for ($t = 0; $t < count($arrTarifas); $t++) {
+                    $telefono = $arrTarifas[$t]['telefono'];
+                    $tarifa = $arrJson['resultados'][$cif]['tarifa']["Tarifa"] ?? "";
+                    array_push($tarifas, array("telefono" => $telefono, "tarifa" => $tarifa));
+                }
             }
         }
 

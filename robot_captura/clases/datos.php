@@ -27,10 +27,7 @@ class DatosCaptura
             exit;
         } else {
             // Envio el correo de aviso de finalización de datos disponibles
-            $con->next_result();
-            $fecha = date("Y-m-d H:i:s");
-            $query = "insert into mails.emails values(NULL,0,'{$fecha}',NULL,'notificaciones@liberi.es','pedrojose.gascon@waspapp.es','Finalización datos disponibles','Se han acabado los datos disponibles para procesar snoop','0');";
-            $con->query($query);
+            $this->enviarAlerta('Finalización datos disponibles', 'Se han acabado los datos disponibles para procesar snoop');
             return json_encode(["error" => "No hay peticiones disponibles"]);
             exit;
         }
@@ -87,5 +84,17 @@ class DatosCaptura
             exit;
 
         $r = $con->query("call captura.peticiones_actualizar_estado({$id},{$estado});");
+    }
+
+    public function enviarAlerta($asunto, $texto): void
+    {
+        $con = new Conexion();
+        $con->conectar();
+
+        $fecha = date("Y-m-d H:i:s");
+        $query = "insert into mails.emails values(NULL,0,'{$fecha}',NULL,'notificaciones@liberi.es','pedrojose.gascon@waspapp.es','{$asunto}','{$texto}','0');";
+        $con->query($query);
+
+        $con->close();
     }
 }

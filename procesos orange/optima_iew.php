@@ -21,12 +21,10 @@ $capt_ep = 'E';
 $capta_np = 'F';
 $capta_vp = 'G';
 $capta_pp = 'H';
-$capta_tp = 'I';
-$porta_ep = 'J';
-$porta_np = 'K';
-$porta_vp = 'L';
-$porta_pp = 'M';
-$porta_tp = 'N';
+$porta_ep = 'I';
+$porta_np = 'J';
+$porta_vp = 'K';
+$porta_pp = 'L';
 
 try {
     $c = new Conexion();
