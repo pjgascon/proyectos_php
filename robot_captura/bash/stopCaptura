@@ -1,0 +1,36 @@
+#!/bin/bash
+
+# Obtener el PID del proceso node (excluyendo el grep)
+PID=$(ps ax | grep src/server_1.js | grep -v grep | awk '{print $1}')
+
+# Verificar si se encontró un PID
+if [ -z "$PID" ]; then
+    echo "No se encontró ningún proceso de Node.js ejecutándose."
+else
+    echo "Matando proceso Node.js con PID: $PID"
+    kill -9 $PID
+    echo "Proceso terminado."
+fi
+
+# Verificar si se encontró un PID
+PID1=$(ps ax | grep chromium | grep -v grep | awk '{print $1}')
+if [ -z "$PID1" ]; then
+    echo "No se encontró ningún proceso de CRHOMIUM ejecutándose."
+else
+    echo "Matando proceso Node.js con PID: $PID1"
+    kill -9 $PID1
+    echo "Proceso terminado."
+fi
+
+# Verificar si se encontró un PID
+PID2=$(ps ax | grep robot_captura | grep -v grep | awk '{print $1}')
+if [ -z "$PID2" ]; then
+    echo "No se encontró ningún proceso de ROBOT CAPTURA ejecutándose."
+else
+    echo "Matando proceso Node.js con PID: $PID2"
+    kill -9 $PID2
+    echo "Proceso terminado."
+fi
+
+cd /opt/robot_captura
+mv stop.falg1 stop.flag

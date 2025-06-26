@@ -13,7 +13,7 @@ class Conexion extends mysqli
 		try {
 			// Llamada al constructor de mysqli con los parámetros correctos
 			parent::__construct(
-				"waspserver.liberi.es", // Servidor
+				"localhost", // Servidor
 				"root", // Usuario
 				"Coral18262202", // Contraseña
 				"captura", // Base de datos

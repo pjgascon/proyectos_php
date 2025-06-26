@@ -1,0 +1,3 @@
+#!/bin/bash
+cd /opt/robot_captura
+php8.3 procesos.php

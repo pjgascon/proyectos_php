@@ -109,82 +109,99 @@ class Captura
         $arrJson = json_decode($json, true);
 
         if (array_key_exists("error", $arrJson)) {
-            $error["error"] = "Timeout";
-            return "";
+            $this->setError("error", "Timeout");
+            return "Timeout";
             exit;
         }
 
         if (array_key_exists("errores", $arrJson)) {
             if (count($arrJson["errores"]) > 0) {
-                $error["error"] = "Servidor temporalmente fuera de servicio, por favor inténtalo dentro de unos minutos";
-                return "";
+                $this->setError("error", "Fuera de servicio");
+                return "Servidor temporalmente fuera de servicio, por favor inténtalo dentro de unos minutos";
                 exit;
             }
         }
 
         if (array_key_exists("bloqueado", $arrJson)) {
             if ($arrJson["bloqueado"] == true) {
-                $error["error"] = "Demasiadas peticiones en este momento, por favor inténtalo dentro de unos minutos";
-                return "";
+                $this->setError("error", "Fuera de servicio");
+                return "Demasiadas peticiones en este momento, por favor inténtalo dentro de unos minutos";
                 exit;
             }
         }
 
         if (array_key_exists("noEncontrados", $arrJson)) {
             if (count($arrJson["noEncontrados"]) > 0) {
-                $error["error"] = "No se han encontrado resultados";
-                return "";
+                $this->setError("error", "KO");
+                return "No se han encontrado resultados";
                 exit;
             }
         }
 
-        $texto = "";
         $totalLineas = 0;
-        $totalLineasConYSinPermancia = 0;
+        $totalLineasConPermanencia = 0;
         $totalLineasSinPermanencia = 0;
         $totalImporte = 0;
+        $texto = "";
         $arrFechas = [];
 
         $cif = array_key_first($arrJson['resultados']);
         $fechaConsultaAux = $arrJson['resultados'][$cif]['timeStamp'];
         $fuente = $arrJson['resultados'][$cif]['fuente'];
-        $arrLineasAux = $arrJson['resultados'][$cif]['permanencias_resumen'];
-        try {
-            $totalLineasConYSinPermancia = count($arrJson['resultados'][$cif]['permanencias']);
-        } catch (Exception $e) {
-            $totalLineasConYSinPermancia = 0;
-        }
+        $arrResumen =  $arrJson['resultados'][$cif]['permanencias_resumen'];
 
-        $date = new DateTime($fechaConsultaAux);
-        $fechaConsulta = $date->format('d/m/Y H:i:s');
+        // $totalImporte = $arrResumen['suma'];
 
         // Creo el array para ordenarlo por fecha
-        $arrLineas = array_keys($arrLineasAux);
-        for ($i = 0; $i < count($arrLineas); $i++) {
-            if (Captura::esFecha($arrLineas[$i])) {
-                $fecha = Captura::fecha2Spain($arrLineas[$i]);
-                $arrFechas[$fecha]["nLineas"] = count($arrLineasAux[$arrLineas[$i]]['telefonos']);
-                $arrFechas[$fecha]["importe"] = $arrLineasAux[$arrLineas[$i]]['importe'];
+        if (strtoupper($fuente) == "PANGEA") {
+            $arrLineas = array_keys($arrResumen["permanencias"]);
+            for ($i = 0; $i < count($arrLineas); $i++) {
+                if (Captura::esFecha($arrLineas[$i])) {
+                    $arrFechas[$i]["fecha"] = $arrLineas[$i];
+                    if (array_key_exists("telefonos", $arrResumen["permanencias"][$arrLineas[$i]])) {
+                        $arrFechas[$i]["nLineas"] = count($arrResumen["permanencias"][$arrLineas[$i]]['telefonos']);
+                    } else {
+                        $arrFechas[$i]["nLineas"] = 0;
+                    }
+                    if (!is_null($arrResumen["permanencias"][$arrLineas[$i]]['importe'])) {
+                        $arrFechas[$i]["importe"] = $arrResumen["permanencias"][$arrLineas[$i]]['importe'];
+                    } else {
+                        $arrFechas[$i]["importe"] = 0;
+                    }
+                    $totalImporte +=  $arrFechas[$i]["importe"];
+                    $texto .= Captura::fecha2Spain($arrLineas[$i]) . ":" . $arrFechas[$i]["importe"] . "€" . PHP_EOL;
+                }
+            }
+        } else {
+            $arrLineas = array_keys($arrResumen);
+            for ($i = 0; $i < count($arrLineas); $i++) {
+                if (Captura::esFecha($arrLineas[$i])) {
+                    $arrFechas[$i]["fecha"] = $arrLineas[$i];
+                    if (array_key_exists("telefonos", $arrResumen[$arrLineas[$i]])) {
+                        $arrFechas[$i]["nLineas"] = count($arrResumen[$arrLineas[$i]]['telefonos']);
+                    } else {
+                        $arrFechas[$i]["nLineas"] = 0;
+                    }
+                    if (!is_null($arrResumen[$arrLineas[$i]]['importe'])) {
+                        $arrFechas[$i]["importe"] = $arrResumen[$arrLineas[$i]]['importe'];
+                    } else {
+                        $arrFechas[$i]["importe"] = 0;
+                    }
+                    $totalImporte +=  $arrFechas[$i]["importe"];
+
+                    $texto .= Captura::fecha2Spain($arrLineas[$i]) . ":" . $arrFechas[$i]["importe"] . "€" . PHP_EOL;
+                }
             }
         }
 
-        // Ordeno el array por fecha de menor a mayor
-        uksort($arrFechas, function ($a, $b) {
-            $fechaA = DateTime::createFromFormat('d/m/Y', $a);
-            $fechaB = DateTime::createFromFormat('d/m/Y', $b);
-            return $fechaA <=> $fechaB;
-        });
+        $totalLineas = $arrJson['resultados'][$cif]['lineas']['numero_total'];
+        $totalLineasSinPermanencia = $arrJson['resultados'][$cif]['lineas']['numero_sin_permanencia'];
+        $totalLineasConPermanencia = $arrJson['resultados'][$cif]['lineas']['numero_con_permanencia'];
 
-        // Recojo los resultados
-        foreach ($arrFechas as $fecha => $datos) {
-            $texto .= "{$fecha}: {$datos['nLineas']}L {$datos['importe']}€ \n";
-            $totalLineas += $datos['nLineas'];
-            $totalImporte += $datos['importe'];
-        }
+        $textoConsulta = "Fecha de consulta: " . Captura::fecha2Spain($fechaConsultaAux) . PHP_EOL . "{$cif}" . PHP_EOL . "Total Líneas: {$totalLineas}L" . PHP_EOL .
+            "{$totalLineasSinPermanencia}L SP" . PHP_EOL . "{$totalLineasConPermanencia}L CP" . PHP_EOL . "Total importe: {$totalImporte}" . PHP_EOL . $texto;
 
-        $totalLineasSinPermanencia = $totalLineasConYSinPermancia - $totalLineas;
-
-        return "Fecha de consulta: {$fechaConsulta} \n{$cif} \n{$totalLineasSinPermanencia}L SP\n" . $totalLineas . "L CP " . number_format($totalImporte, 2, ",", ".") . "€\n" . $texto;
+        return $textoConsulta;
     }
 
     private function procesarJSONPeticionAutomatica($json): array
@@ -308,7 +325,7 @@ class Captura
 
         $arrRetorno = [];
 
-        $arrRetorno["fecha"] = $fechaConsultaAux;
+        $arrRetorno["fecha"] = Captura::fecha2Spain($fechaConsultaAux);
         $arrRetorno["cif"] = $cif;
         $arrRetorno["importe"] = $totalImporte;
         $arrRetorno["totalLineas"] = $totalLineas;
