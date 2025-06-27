@@ -95,6 +95,7 @@ class Captura
             curl_close($ch);
             if ($tipoPeticion == 1) {
                 // Petición manual
+                $this->peticionAutomatica = $this->procesarJSONPeticionAutomatica($response);
                 return $this->procesarJSON($response);
             } else {
                 // Petición desde la automática

@@ -8,10 +8,10 @@ require_once(getcwd() . "/clases/datos.php");
 
 // $tiempoDeEspera = mt_rand(1, 3);
 // sleep($tiempoDeEspera * 60);
-if (file_exists(getcwd() . "/stop.flag")) {
-    echo "Ejecución detenida por bandera." . PHP_EOL;
-    exit;
-}
+#if (file_exists(getcwd() . "/stop.flag")) {
+#    echo "Ejecución detenida por bandera." . PHP_EOL;
+#    exit;
+#}
 
 if (file_exists(getcwd() . "/r")) {
     echo "Reinicio del servidor." . PHP_EOL;
@@ -44,31 +44,36 @@ if (!array_key_exists("error", $dat)) {
         if ($tipoPeticion) {
             // Se han producido errores o no se han encontrado resultados
             if ($captura->getError()["error"] == "KO") {
-                $peticion->guardarPeticion($id, $usuario, $cif, "Sin datos");
+                $peticion->guardarPeticion($id, $usuario, $cif, "Sin datos", "");
             } else {
+                $peticion->guardarPeticion($id, $usuario, $cif, "Sin datos", "");
                 system("/usr/bin/php8.3 procesos.php");
                 exit;
             }
         } else {
             if ($captura->getError()["error"] == "Timeout") {
-                $peticion->guardarPeticion($id, $usuario, $cif, "No se han encontrado resultados (Timeout)");
+                $peticion->guardarPeticion($id, $usuario, $cif, "No se han encontrado resultados (Timeout)", "");
                 //$peticion->enviarAlerta("Timeout", "Proceso finalizado por timeout");
                 system("/usr/bin/php8.3 procesos.php");
                 exit;
             }
 
             if ($captura->getError()["error"] == "No se han encontrado resultados") {
-                $peticion->guardarPeticion($id, $usuario, $cif, "No se han encontrado resultados (Timeout)");
+                $peticion->guardarPeticion($id, $usuario, $cif, "No se han encontrado resultados (Timeout)", "");
                 $peticion->actualizarEstadoPeticion($id, $estadoNoEncontrado);
             }
         }
         echo "Error en la petición: " . $captura->getError()["error"] . PHP_EOL;
     } else {
         //Todo OK
-        $peticion->guardarPeticion($id, $usuario, $cif, $resultados);
-    }
+        if ($tipoPeticion) {
+            $peticion->guardarPeticion($id, -1, $cif, $resultados, json_encode($captura->getPeticionAutomatica(), JSON_UNESCAPED_UNICODE));
+        } else {
+            $peticion->guardarPeticion($id, -1, $cif, '', json_encode($captura->getPeticionAutomatica(), JSON_UNESCAPED_UNICODE));
+        }
 
-    echo "Petición realizada correctamente" . PHP_EOL;
+        echo "Petición guardada correctamente" . PHP_EOL;
+    }
 
     sleep(10);
     system("clear");

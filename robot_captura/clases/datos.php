@@ -55,13 +55,13 @@ class DatosCaptura
         }
     }
 
-    public function guardarPeticion($id, $usuario_id, $cif, $resultado): bool
+    public function guardarPeticion($id, $usuario_id, $cif, $resultado, $objJson): bool
     {
         try {
             $con = new Conexion();
             $con->conectar();
             if (!$con->getExisteError()) {
-                $r = $con->query("call captura.peticiones_guardar({$usuario_id},'{$cif}','{$resultado}',{$id});");
+                $r = $con->query("call captura.peticiones_guardar({$usuario_id},'{$cif}','{$resultado}',{$id},'{$objJson}');");
                 return ($r->num_rows > 0) ? (bool) $r->fetch_all(MYSQLI_ASSOC)[0]["retorno"] : false;
             } else {
                 return false;
