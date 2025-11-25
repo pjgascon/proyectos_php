@@ -13,10 +13,10 @@ class Conexion extends mysqli
 	
 	public function conectar()
 	{	
-		parent::__construct("82.223.5.71",
+		parent::__construct("distribuidoresserver.liberi.es",
 							"root",
-							"BtvZ87OVddkz",
-							"mails",
+							"Coral18262202",
+							"temporal",
 							3306);
 
 		if($this->connect_errno){
