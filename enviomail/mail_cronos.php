@@ -48,6 +48,8 @@ if ($procesarCorreo) {
 
                 //Set Params
                 $mail->setFrom("info@cronosapp.es", 'Comunicaciones CRONOS Crm');
+                $mail->Body = $r[$i]["texto"];
+                $mail->Subject = $r[$i]["asunto"];
             } elseif ($r[$i]['tipologia'] == 2) {
                 //Authentication
                 $mail->Username = "correo@fichabit.es";
@@ -55,11 +57,76 @@ if ($procesarCorreo) {
 
                 //Set Params
                 $mail->setFrom("correo@fichabit.es", 'Fichabit Gestion Laboral');
+                $cuerpo = str_replace("CRONOS CRM", "Fichabit Gestion Laboral", $r[$i]["texto"]);
+                $mail->Body = "<!DOCTYPE html>
+                                <html lang='es'>
+                                <head>
+                                    <meta charset='UTF-8'>
+                                    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+                                    <title>Fichabit</title>
+                                    <style>
+                                        body { margin: 0; padding: 0; background-color: #f6f6f6; font-family: Arial, sans-serif; }
+                                        table { border-collapse: collapse; }
+                                        /* Media Query para móvil - ¡Muchos clientes lo ignoran! */
+                                        @media only screen and (max-width: 600px) {
+                                            .container { width: 100% !important; }
+                                            .content-area { padding: 10px !important; }
+                                            .header-logo img { max-width: 150px !important; height: auto !important; }
+                                        }
+                                    </style>
+                                </head>
+                                <body style='margin: 0; padding: 0; background-color: #f6f6f6; font-family: Arial, sans-serif;'>
+
+                                <table border='0' cellpadding='0' cellspacing='0' width='100%' style='min-width: 320px;'>
+                                    <tr>
+                                        <td align='center' style='padding: 20px 0;'>
+                                            <table border='0' cellpadding='0' cellspacing='0' width='600' class='container' style='width: 600px; background-color: #ffffff; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);'>
+
+                                                <tr>
+                                                    <td align='center' style='background-color: #B3FF00; padding: 20px 0; border-top-left-radius: 8px; border-top-right-radius: 8px;'>
+                                                        <table border='0' cellpadding='0' cellspacing='0' width='100%'>
+                                                            <tr>
+                                                                <td align='center' class='header-logo' style='padding: 0 20px;'>
+                                                                    <a href='https://www.fichabit.es' target='_blank' style='text-decoration: none;'>
+                                                                        <h1 style='color: #000000; margin: 0; font-size: 24px;'>Fichabit Gestión Laboral</h1>
+                                                                        </a>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class='content-area' style='padding: 30px 40px; color: #333333;'>
+                                                        <p style='font-size: 16px; line-height: 1.6;'>
+                                                            {$cuerpo}
+                                                        </p>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td align='center' style='background-color: #f2f2f2; padding: 20px 40px; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;'>
+                                                        <p style='font-size: 12px; color: #777777; margin: 0 0 10px 0;'>
+                                                            &copy; Liberi Software. Todos los derechos reservados.
+                                                        </p>
+                                                        <p style='font-size: 12px; color: #777777; margin: 0;'>
+                                                            <a href='https://fichabit.es' target='_blank' style='color: #48BA49; text-decoration: none;'>Acceder</a> 
+                                                        </p>
+                                                    </td>
+                                                </tr>
+
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                </body>
+                                </html>";
+                $mail->Subject = "Fichabit Gestion Laboral";
             }
 
             $mail->AddAddress($r[$i]["para"]);
-            $mail->Subject = $r[$i]["asunto"];
-            $mail->Body = $r[$i]["texto"];
+
 
             if (!is_null($r[$i]['adjunto'])) {
                 if (strlen($r[$i]['adjunto']) > 4) {
@@ -76,39 +143,6 @@ if ($procesarCorreo) {
                 $c->query("call robot_modificar_estado(" . $r[$i]['id'] . ",1);");
                 echo "Correo " . $i . " enviado info@cronosapp.es\n\r";
             }
-
-            //$c->next_result();
-
-            //     //Server settings
-            //     //$mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
-            //     $mail->isSMTP();                                            //Send using SMTP
-            //     $mail->Host       = 'smtp.buzondecorreo.com';                     //Set the SMTP server to send through
-            //     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-            //     $mail->Username   = 'hil580c';                     //SMTP username
-            //     $mail->Password   = 'Coral1826';                               //SMTP password
-            //     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
-            //     $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
-
-            //     //Recipients
-            //     $mail->setFrom('info@connectcloud.es', 'Mailer');
-            //     $mail->addAddress('pedrojose.gascon@gmail.com', 'Joe User');     //Add a recipient
-            //     //$mail->addAddress('ellen@example.com');               //Name is optional
-            //     $mail->addReplyTo('info@connectcloud.es', 'Information');
-            //    //$mail->addCC('cc@example.com');
-            //    // $mail->addBCC('bcc@example.com');
-
-            //     //Attachments
-            //    // $mail->addAttachment('/var/tmp/file.tar.gz');         //Add attachments
-            //    // $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    //Optional name
-
-            //     //Content
-            //     $mail->isHTML(true);                                  //Set email format to HTML
-            //     $mail->Subject = 'Here is the subject';
-            //     $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
-            //     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
-
-            //     $mail->send();
-            // echo 'Message has been sent';
         } catch (Exception $e) {
             $c->query("call robot_modificar_estado(" . $r[$i]['id'] . ",0);");
             echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
@@ -117,3 +151,4 @@ if ($procesarCorreo) {
     }
     $c->close();
 }
+
